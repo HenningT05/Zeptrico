@@ -1,0 +1,31 @@
+#Craft_Mud_Button{
+    visibility: hidden;
+}
+
+.Xp_LevelBar{
+    position: relative;
+    left: 10px;
+    bottom: -5px;
+    height: 15px;
+    width: 480px;
+    background-color: white;
+}
+
+.Xp_BackBar{
+    position: relative;
+    left: 10px;
+    height: 25px;
+    width: 500px;
+    background-color: blue;
+}
+
+.Xp_Progress{
+    position: relative;
+    height: 15px;
+    width: 0%;
+    background-color: green;
+}
+
+#Level_Up_Text{
+    visibility: hidden;
+}

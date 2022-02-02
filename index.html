@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="TimeCountDown.js"></script>
+    <script src="UpgradeToll.js"></script>
+    <script src="Crafting.js"></script>
+    <script src="XpCheck.js"></script>
+
+    <link href="Craft.css" rel="stylesheet">
+</head>
+<body>
+    <p id=Text></p>
+    <button id="StartMineButton" onclick="start_Mine()">Mine</button>
+
+    <p id="meters_Down">Meters down 0</p>
+
+    <div class="Inventory">
+        <p Id="number_Of_Stone"></p>
+        <p Id="number_Of_Cual"></p>
+        <p Id="number_Of_Cobber"></p>
+        <p Id="number_Of_Dirt"></p>
+        <p Id="number_Of_Iron"></p>
+        <p Id="number_Of_Mud"></p>
+    </div>
+
+    <button id="upgrade_Tool_Button" onclick="upgrade_Toll()">Upgrade 1 Mud</button>
+
+    <button id="crafting_Button" onclick="go_To_Crafting_Page()">Crafting</button>
+
+    <div class="Craft_Page">
+        <button id="Craft_Mud_Button" onclick="craftMud()">Craft mud: 2 Dirt</button>
+    </div>
+
+    
+
+    <p id="Xp_Count"></p>
+    <div class="Xp_BackBar">
+        <div class="Xp_LevelBar">
+            <div class="Xp_Progress"></div>
+        </div>
+    </div>
+    <h1 id="Level_Up_Text">Level up!!</h1>
+
+    
+</body>
+</html>
