@@ -9,8 +9,10 @@
     <script src="UpgradeToll.js"></script>
     <script src="Crafting.js"></script>
     <script src="XpCheck.js"></script>
+    <script src="Melting_Metall.js"></script>
 
     <link href="Craft.css" rel="stylesheet">
+    <link href="Furness.css" rel="stylesheet">
 </head>
 <body>
     <p id=Text></p>
@@ -19,12 +21,16 @@
     <p id="meters_Down">Meters down 0</p>
 
     <div class="Inventory">
-        <p Id="number_Of_Stone"></p>
-        <p Id="number_Of_Cual"></p>
-        <p Id="number_Of_Cobber"></p>
         <p Id="number_Of_Dirt"></p>
-        <p Id="number_Of_Iron"></p>
+        <p Id="number_Of_Stone"></p>
+        <p Id="number_Of_Coal"></p>
+        <p Id="number_Of_Cobber_Ore"></p>
+        <p Id="number_Of_Tin_Ore"></p>
+        <p Id="number_Of_Iron_Ore"></p>
         <p Id="number_Of_Mud"></p>
+        <p Id="number_Of_Cobber"></p>
+        <p Id="number_Of_Iron"></p>
+        
     </div>
 
     <button id="upgrade_Tool_Button" onclick="upgrade_Toll()">Upgrade 1 Mud</button>
@@ -35,6 +41,12 @@
         <button id="Craft_Mud_Button" onclick="craftMud()">Craft mud: 2 Dirt</button>
     </div>
 
+    <button id="furness_Open_Button" onclick="Furness_Open_Function()">Furness</button>
+
+    <div class="melting_Ores">
+        <button id="melt_Cobber_Button" onclick="Start_Melt_Cobber()">Melt Cobber</button>
+        <button id="melt_Iron_Button" onclick="Start_Melt_Iron()">Melt Iron</button>
+    </div>
     
 
     <p id="Xp_Count"></p>

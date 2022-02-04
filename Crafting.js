@@ -13,11 +13,15 @@ function go_To_Crafting_Page(){
 
 
 function craftMud(){
-    if (Inventory[1] >= 2){
-        Inventory[1] -= 2
-        Inventory[5] += 1
-        document.getElementById('number_Of_Dirt').innerHTML = `Dirt: ${Inventory[1]}`;
-        document.getElementById('number_Of_Mud').innerHTML = `Mud: ${Inventory[5]}`;
+    if (Inventory[0] >= 2){
+        Inventory[0] -= 2
+        Craft_Inventory[1] += 1
+        document.getElementById('number_Of_Dirt').innerHTML = `Dirt: ${Inventory[0]}`;
+        document.getElementById('number_Of_Mud').innerHTML = `Mud: ${Craft_Inventory[1]}`;
+
+        xp_Incressment = 30
+        xp = xp_Incressment
+        Xp_Level_Check()
     }
     else{
         console.log("big fack up")

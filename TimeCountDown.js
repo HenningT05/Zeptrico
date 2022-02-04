@@ -1,7 +1,6 @@
 var on_Going_Mining = false
 
-var mining_Speed = 3
-
+var mining_Speed = 2
 var meters_Down = 0
 var random_Mining_Object = 0 
 
@@ -10,7 +9,9 @@ var Level = 1
 
 var xp_Incressment = 0
 
-const Inventory = [/*Stone  0*/ 0,   /*Dirt  1*/ 0,   /*Coal  2*/ 0,   /*Cobber  3*/ 0,   /*Iron  4*/0,   /*Mud  5*/0]
+const Inventory = [/*Dirt  0*/ 0,   /*Stone  1*/ 0,   /*Coal  2*/ 0,   /*Cobber ore 3*/ 0,   /*Tine ore  4*/0,   /*Iron ore  5*/0,   /*Silver ore  6*/0,   /*Gold ore 7*/0,   /*Diamond  8*/0]
+const Craft_Inventory = [/*Mud  1*/0,   /*Bronze  2*/0]
+const Melt_Inventory = [/*Cobber  1*/0,   /*Tin  2*/0,   /*Iron   3*/0]
 
 var Dirt_Chance_Of_Getting_Top = 0
 var Dirt_Chance_Of_Getting_Buttom = 0
@@ -18,11 +19,14 @@ var Dirt_Chance_Of_Getting_Buttom = 0
 var Stone_Chance_Of_Getting_Top = 0
 var Stone_Chance_Of_Getting_Buttom = 0
 
-var Cual_Chance_Of_Getting_Top = 0
-var Cual_Chance_Of_Getting_Buttom = 0
+var Coal_Chance_Of_Getting_Top = 0
+var Coal_Chance_Of_Getting_Buttom = 0
 
 var Cobber_Chance_Of_Getting_Top = 0
 var Cobber_Chance_Of_Getting_Buttom = 0
+
+var Tin_Chance_Of_Getting_Top = 0
+var Tin_Chance_Of_Getting_Buttom = 0
 
 var Iron_Chance_Of_Getting_Top = 0
 var Iron_Chance_Of_Getting_Buttom = 0
@@ -34,9 +38,9 @@ function delay(n){
 }
 
 function pick_Mining_Object(){
-    xp_Incressment = 50
-    xp += xp_Incressment
-    document.getElementById('Xp_Count').innerHTML = `XP ${xp}`;
+    xp_Incressment = 20
+    xp = xp_Incressment
+    
 
     meters_Down += 2
     document.getElementById('meters_Down').innerHTML = `Meters down ${meters_Down}`;
@@ -45,30 +49,35 @@ function pick_Mining_Object(){
     random_Mining_Object = Math.floor(Math.random()*100)
     console.log(random_Mining_Object)
 
-    if (Stone_Chance_Of_Getting_Buttom <= random_Mining_Object && Stone_Chance_Of_Getting_Top >= random_Mining_Object){
-        document.getElementById('Text').innerHTML = "Stone";
-        Inventory[0] += 1
-        document.getElementById('number_Of_Stone').innerHTML = `stone: ${Inventory[0]}`;
-    }
-    if (Cual_Chance_Of_Getting_Buttom <= random_Mining_Object && Cual_Chance_Of_Getting_Top >= random_Mining_Object){
-        document.getElementById('Text').innerHTML = "Cual";
-        Inventory[2] += 1
-        document.getElementById('number_Of_Cual').innerHTML = `Cual: ${Inventory[2]}`;
-    }
-    if (Iron_Chance_Of_Getting_Buttom <= random_Mining_Object && Iron_Chance_Of_Getting_Top >= random_Mining_Object){
-        document.getElementById('Text').innerHTML = "Iron";
-        Inventory[4] += 1
-        document.getElementById('number_Of_Iron').innerHTML = `Iron: ${Inventory[4]}`;
-    }
-    if (Cobber_Chance_Of_Getting_Buttom <= random_Mining_Object && Cobber_Chance_Of_Getting_Top >= random_Mining_Object){
-        document.getElementById('Text').innerHTML = "Cobber";
-        Inventory[3] += 1
-        document.getElementById('number_Of_Cobber').innerHTML = `Cobber: ${Inventory[3]}`;
-    }
     if (Dirt_Chance_Of_Getting_Buttom <= random_Mining_Object && Dirt_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Text').innerHTML = "Dirt";
+        Inventory[0] += 1
+        document.getElementById('number_Of_Dirt').innerHTML = `Dirt: ${Inventory[0]}`;
+    }
+    if (Stone_Chance_Of_Getting_Buttom <= random_Mining_Object && Stone_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Text').innerHTML = "Stone";
         Inventory[1] += 1
-        document.getElementById('number_Of_Dirt').innerHTML = `Dirt: ${Inventory[1]}`;
+        document.getElementById('number_Of_Stone').innerHTML = `stone: ${Inventory[1]}`;
+    }
+    if (Coal_Chance_Of_Getting_Buttom <= random_Mining_Object && Coal_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Text').innerHTML = "Coal";
+        Inventory[2] += 1
+        document.getElementById('number_Of_Coal').innerHTML = `Coal: ${Inventory[2]}`;
+    }
+    if (Cobber_Chance_Of_Getting_Buttom <= random_Mining_Object && Cobber_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Text').innerHTML = "Cobber Ore";
+        Inventory[3] += 1
+        document.getElementById('number_Of_Cobber_Ore').innerHTML = `Cobber Ore: ${Inventory[3]}`;
+    }
+    if (Cobber_Chance_Of_Getting_Buttom <= random_Mining_Object && Cobber_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Text').innerHTML = "Tin Ore";
+        Inventory[4] += 1
+        document.getElementById('number_Of_Tin_Ore').innerHTML = `Tin Ore: ${Inventory[4]}`;
+    }
+    if (Iron_Chance_Of_Getting_Buttom <= random_Mining_Object && Iron_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Text').innerHTML = "Iron Ore";
+        Inventory[5] += 1
+        document.getElementById('number_Of_Iron_Ore').innerHTML = `Iron Ore: ${Inventory[5]}`;
     }
     Xp_Level_Check()
 }
@@ -92,8 +101,8 @@ function check_Meters(){
         Stone_Chance_Of_Getting_Top = 70
         Stone_Chance_Of_Getting_Buttom = 10
 
-        Cual_Chance_Of_Getting_Top = 90
-        Cual_Chance_Of_Getting_Buttom = 70
+        Coal_Chance_Of_Getting_Top = 90
+        Coal_Chance_Of_Getting_Buttom = 70
 
         Cobber_Chance_Of_Getting_Top = 100
         Cobber_Chance_Of_Getting_Buttom = 90
@@ -102,24 +111,30 @@ function check_Meters(){
         Stone_Chance_Of_Getting_Top = 50
         Stone_Chance_Of_Getting_Buttom = 0
 
-        Cual_Chance_Of_Getting_Top = 75
-        Cual_Chance_Of_Getting_Buttom = 50
+        Coal_Chance_Of_Getting_Top = 70
+        Coal_Chance_Of_Getting_Buttom = 50
 
-        Cobber_Chance_Of_Getting_Top = 90
-        Cobber_Chance_Of_Getting_Buttom = 75
+        Cobber_Chance_Of_Getting_Top = 80
+        Cobber_Chance_Of_Getting_Buttom = 70
+        
+        Tin_Chance_Of_Getting_Top = 90
+        Tin_Chance_Of_Getting_Buttom = 80
 
         Iron_Chance_Of_Getting_Top = 100
         Iron_Chance_Of_Getting_Buttom = 90
     }
     if (meters_Down >= 50 ){
-        Stone_Chance_Of_Getting_Top = 50
+        Stone_Chance_Of_Getting_Top = 30
         Stone_Chance_Of_Getting_Buttom = 0
 
-        Cual_Chance_Of_Getting_Top = 65
-        Cual_Chance_Of_Getting_Buttom = 50
+        Coal_Chance_Of_Getting_Top = 50
+        Coal_Chance_Of_Getting_Buttom = 30
 
-        Cobber_Chance_Of_Getting_Top = 80
-        Cobber_Chance_Of_Getting_Buttom = 65
+        Cobber_Chance_Of_Getting_Top = 65
+        Cobber_Chance_Of_Getting_Buttom = 50
+
+        Tin_Chance_Of_Getting_Top = 80
+        Tin_Chance_Of_Getting_Buttom = 65
 
         Iron_Chance_Of_Getting_Top = 100
         Iron_Chance_Of_Getting_Buttom = 80
