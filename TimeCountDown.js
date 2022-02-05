@@ -9,9 +9,9 @@ var Level = 1
 
 var xp_Incressment = 0
 
-const Inventory = [/*Dirt  0*/ 0,   /*Stone  1*/ 0,   /*Coal  2*/ 0,   /*Cobber ore 3*/ 0,   /*Tine ore  4*/0,   /*Iron ore  5*/0,   /*Silver ore  6*/0,   /*Gold ore 7*/0,   /*Diamond  8*/0]
-const Craft_Inventory = [/*Mud  1*/0,   /*Bronze  2*/0]
-const Melt_Inventory = [/*Cobber  1*/0,   /*Tin  2*/0,   /*Iron   3*/0]
+const Inventory = [/*Dirt  0*/ 0,   /*Stone  1*/ 0,   /*Cual  2*/ 0,   /*Cobber ore 3*/ 0,   /*Tine ore  4*/0,   /*Iron ore  5*/0,   /*Silver ore  6*/0,   /*Gold ore 7*/0,   /*Diamond  8*/0]
+const Craft_Inventory = [/*Mud  0*/0,   /*Bronze  1*/0]
+const Melt_Inventory = [/*Cobber  0*/0,   /*Tin  1*/0,   /*Iron   2*/0]
 
 var Dirt_Chance_Of_Getting_Top = 0
 var Dirt_Chance_Of_Getting_Buttom = 0
@@ -47,7 +47,7 @@ function pick_Mining_Object(){
 
     on_Going_Mining = false
     random_Mining_Object = Math.floor(Math.random()*100)
-    console.log(random_Mining_Object)
+    console.log(random_Mining_Object, " random minding object")
 
     if (Dirt_Chance_Of_Getting_Buttom <= random_Mining_Object && Dirt_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Text').innerHTML = "Dirt";
@@ -69,7 +69,7 @@ function pick_Mining_Object(){
         Inventory[3] += 1
         document.getElementById('number_Of_Cobber_Ore').innerHTML = `Cobber Ore: ${Inventory[3]}`;
     }
-    if (Cobber_Chance_Of_Getting_Buttom <= random_Mining_Object && Cobber_Chance_Of_Getting_Top >= random_Mining_Object){
+    if (Tin_Chance_Of_Getting_Buttom <= random_Mining_Object && Tin_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Text').innerHTML = "Tin Ore";
         Inventory[4] += 1
         document.getElementById('number_Of_Tin_Ore').innerHTML = `Tin Ore: ${Inventory[4]}`;

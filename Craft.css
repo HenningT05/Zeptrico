@@ -2,6 +2,10 @@
     visibility: hidden;
 }
 
+#Craft_Broze_Button{
+    visibility: hidden;
+}
+
 .Xp_LevelBar{
     position: relative;
     left: 10px;
