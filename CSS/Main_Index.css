@@ -1,11 +1,3 @@
-#Craft_Mud_Button{
-    visibility: hidden;
-}
-
-#Craft_Broze_Button{
-    visibility: hidden;
-}
-
 .Xp_LevelBar{
     position: relative;
     left: 10px;
@@ -32,4 +24,14 @@
 
 #Level_Up_Text{
     visibility: hidden;
+}
+
+
+.Object_Gotten{
+    position: relative;
+    left: 50%;
+}
+
+#Mine_Get_Object{
+    position: relative;
 }
