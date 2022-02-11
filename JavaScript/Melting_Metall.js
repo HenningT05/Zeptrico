@@ -5,11 +5,11 @@ function Start_Melt_Cobber(){
         Inventory[3] -= 1
         Inventory[2] -= 1
 
-        Melt_Inventory[1] += 1 
+        Melt_Inventory[0] += 1 
 
         document.getElementById('number_Of_Cobber_Ore').innerHTML = `Cobber Ore: ${Inventory[3]}`;
         document.getElementById('number_Of_Coal').innerHTML = `Coal: ${Inventory[2]}`;
-        document.getElementById('number_Of_Cobber').innerHTML = `Cobber: ${Melt_Inventory[1]}`;
+        document.getElementById('number_Of_Cobber').innerHTML = `Cobber: ${Melt_Inventory[0]}`;
 
         xp_Incressment = 20
         xp = xp_Incressment
@@ -29,7 +29,7 @@ function start_Melt_Tin(){
 
         document.getElementById('number_Of_Tin_Ore').innerHTML = `Tin Ore: ${Inventory[4]}`;
         document.getElementById('number_Of_Coal').innerHTML = `Coal: ${Inventory[2]}`;
-        document.getElementById('number_Of_Tin').innerHTML = `Tin: ${Melt_Inventory[2]}`;
+        document.getElementById('number_Of_Tin').innerHTML = `Tin: ${Melt_Inventory[1]}`;
 
         xp_Incressment = 20
         xp = xp_Incressment
@@ -45,11 +45,11 @@ function Start_Melt_Iron(){
         Inventory[5] -= 1
         Inventory[2] -= 1
 
-        Melt_Inventory[3] += 1 
+        Melt_Inventory[2] += 1 
 
         document.getElementById('number_Of_Iron_Ore').innerHTML = `Iron Ore: ${Inventory[5]}`;
         document.getElementById('number_Of_Coal').innerHTML = `Coal: ${Inventory[2]}`;
-        document.getElementById('number_Of_Iron').innerHTML = `Iron: ${Melt_Inventory[3]}`;
+        document.getElementById('number_Of_Iron').innerHTML = `Iron: ${Melt_Inventory[2]}`;
 
         xp_Incressment = 20
         xp = xp_Incressment

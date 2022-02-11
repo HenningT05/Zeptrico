@@ -1,0 +1,22 @@
+.Start_Mining_Button_Div{
+    position: relative;
+    left: 0px;
+}
+
+#Start_Mine_Button{
+    position: absolute;
+    left: 50px;
+
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+
+    border-radius: 16px;
+
+    background-color: transparent;
+}
+
+#Mine_Button_IMG{
+    position: relative;
+    left: 45px;
+}

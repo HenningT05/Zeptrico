@@ -25,6 +25,7 @@ async function Xp_Level_Check(){
     if (xp_Prosent_Andel >= 100){
         Level += 1
         document.getElementById('Level_Up_Text').innerHTML = `Level Up ${Level} !!`;
+        document.getElementById('TC_Level').innerHTML = `Level ${Level}`;
         document.getElementById("Level_Up_Text").style.visibility="visible"; 
         document.getElementsByClassName("Xp_Progress")[0].style.width = `0%`;
         

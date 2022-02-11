@@ -4,33 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zeptrico</title>
     <script src="../Zeptrico/JavaScript/TimeCountDown.js"></script>
     <script src="../Zeptrico/JavaScript/UpgradeToll.js"></script>
     <script src="../Zeptrico/JavaScript/Crafting.js"></script>
     <script src="../Zeptrico/JavaScript/XpCheck.js"></script>
     <script src="../Zeptrico/JavaScript/Melting_Metall.js"></script>
+    <script src="../Zeptrico/JavaScript/Inventory.js"></script>
 
     <link href="../Zeptrico/CSS/Craft.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Furness.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Main_Index.css" rel="stylesheet">
+    <link href="../Zeptrico/CSS/Mine_Button.css" rel="stylesheet">
+    <link href="../Zeptrico/CSS/Inventory.css" rel="stylesheet">
 </head>
 <body>
+    <div class="Top_Corer_Text">
+        <p id="TC_Level">Level 1</p>
+    </div>
+
     <div class="Object_Gotten">
         <p id=Text></p>
-        <img id="Mine_Get_Object" src="" alt="">
+        <img id="Mine_Get_Object_IMG" src="" alt="">
     </div>
-    <button id="StartMineButton" onclick="start_Mine()">Mine</button>
-
+    <div class="Start_Mining_Button_Div">
+        <button id="Start_Mine_Button" onclick="start_Mine()"></button>
+        <img id="Mine_Button_IMG" src="../Zeptrico/Pickaxe_Images/Pickaxe_Level1.png" alt="">
+    </div>
     <p id="meters_Down">Meters down 0</p>
 
+    <button id="Inventory_Button" onclick="Open_Inventory()">Inventory</button>
+
     <div class="Inventory">
-        <p Id="number_Of_Dirt"></p>
-        <p Id="number_Of_Stone"></p>
-        <p Id="number_Of_Coal"></p>
-        <p Id="number_Of_Cobber_Ore"></p>
-        <p Id="number_Of_Tin_Ore"></p>
-        <p Id="number_Of_Iron_Ore"></p>
+        <div class="Inventory_Dirt">
+            <img id="Dirt_Inventroy_IMG" src="../Zeptrico/Mining_Images/Dirt_Locked.png" alt="">
+            <p Id="number_Of_Dirt">Dirt 0</p>
+        </div>
+        <div class="Inventory_Stone">
+            <img id="Stone_Inventory_IMG"src="../Zeptrico/Mining_Images/Stone_Locked.png" alt="">
+            <p Id="number_Of_Stone">Stone 0</p>
+        </div>
+        
+        <div class="Inventory_Coal">
+            <img id="Coal_Inventory_IMG" src="../Zeptrico/Mining_Images/Coal_Locked.png" alt="">
+            <p Id="number_Of_Coal">Coal 0</p>
+        </div>
+
+        <div class="Inventory_Cobber_Ore">
+            <img id="Cobber_Ore_Inventory_IMG" src="../Zeptrico/Mining_Images/Cobber_Ore_Locked.png" alt="">
+            <p Id="number_Of_Cobber_Ore">Cobber Ore 0</p>
+        </div>
+
+        <div class="Inventory_Tin_Ore">
+            <img id="Tin_Ore_Inventory_IMG" src="../Zeptrico/Mining_Images/Tin_Ore_Locked.png" alt="">
+            <p Id="number_Of_Tin_Ore">Tin Ore 0</p>
+        </div>
+
+        <div class="Inventory_Iron_Ore">
+            <img id="Iron_Ore_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p Id="number_Of_Iron_Ore">Iron Ore 0</p>
+        </div>
+        
+        
+        
+        <p Id="number_Of_Silver_Ore"></p>
+        <p Id="number_Of_Gold_Ore"></p>
+        <p Id="number_Of_Diamond"></p>
         <p Id="number_Of_Mud"></p>
         <p Id="number_Of_Cobber"></p>
         <p id="number_Of_Tin"></p>

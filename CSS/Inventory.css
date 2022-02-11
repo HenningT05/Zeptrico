@@ -1,0 +1,277 @@
+.Inventory{
+    position: relative;
+
+    top: 00px;
+}
+
+
+
+.Inventory_Dirt{
+    visibility: hidden;
+
+    position: relative;
+
+    left: 4%;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+   
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Dirt_Inventroy_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Dirt{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Stone{
+    visibility: hidden;
+
+    position: relative;
+
+    left: 36%;
+    top: -154px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Stone_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Stone{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Coal{
+    visibility: hidden;
+
+    position: relative;
+
+    left: 68%;
+    top: -308px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Coal_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Coal{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Cobber_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    left: 4%;
+    top: -300px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Cobber_Ore_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Cobber_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Tin_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    left: 36%;
+    top: -454px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Tin_Ore_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Tin_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Iron_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    left: 68%;
+    top: -608px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Iron_Ore_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Iron_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
