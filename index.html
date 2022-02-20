@@ -11,31 +11,44 @@
     <script src="../Zeptrico/JavaScript/XpCheck.js"></script>
     <script src="../Zeptrico/JavaScript/Melting_Metall.js"></script>
     <script src="../Zeptrico/JavaScript/Inventory.js"></script>
+    <script src="../Zeptrico/JavaScript/Clean_Screen.js"></script>
 
     <link href="../Zeptrico/CSS/Craft.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Furness.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Main_Index.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Mine_Button.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Inventory.css" rel="stylesheet">
+    <link href="../Zeptrico/CSS/XP_Bar.css" rel="stylesheet">
 </head>
 <body>
-    <div class="Top_Corer_Text">
-        <p id="TC_Level">Level 1</p>
+
+    
+    <div class="Level_Counter_TC">
+        <div class="Top_Corer_Text">
+            <p id="TC_Level">Level 1</p>
+        </div>
     </div>
 
-    <div class="Object_Gotten">
-        <p id=Text></p>
-        <img id="Mine_Get_Object_IMG" src="" alt="">
+    <div class="Loot_Get">
+        <div class="Object_Gotten">
+            <p id=Text></p>
+            <img id="Mine_Get_Object_IMG" src="" alt="">
+        </div>
     </div>
-    <div class="Start_Mining_Button_Div">
-        <button id="Start_Mine_Button" onclick="start_Mine()"></button>
-        <img id="Mine_Button_IMG" src="../Zeptrico/Pickaxe_Images/Pickaxe_Level1.png" alt="">
-    </div>
-    <p id="meters_Down">Meters down 0</p>
 
-    <button id="Inventory_Button" onclick="Open_Inventory()">Inventory</button>
+    <div class="Mining_Class">
+        <div class="Start_Mining_Button_Div">
+            <button id="Start_Mine_Button" onclick="start_Mine()"></button>
+            <img id="Mine_Button_IMG" src="../Zeptrico/Pickaxe_Images/Pickaxe_Level1.png" alt="">
+        </div>
+        <p id="meters_Down">Meters down 0</p>
+    </div>
+
+    <button id="Inventory_Button" onclick="Open_Inventory()"><img src="../Zeptrico/MainScreen_IMG/Inventory.png" alt=""></button>
 
     <div class="Inventory">
+        <h1 id="Inventory_Head_Title">Inventory</h1>
+        <button id="Close_Inventory_Button" onclick="Clean_Inventory_Gui()">Close</button>
         <div class="Inventory_Dirt">
             <img id="Dirt_Inventroy_IMG" src="../Zeptrico/Mining_Images/Dirt_Locked.png" alt="">
             <p Id="number_Of_Dirt">Dirt 0</p>
@@ -64,27 +77,67 @@
             <img id="Iron_Ore_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
             <p Id="number_Of_Iron_Ore">Iron Ore 0</p>
         </div>
-        
-        
-        
-        <p Id="number_Of_Silver_Ore"></p>
-        <p Id="number_Of_Gold_Ore"></p>
-        <p Id="number_Of_Diamond"></p>
-        <p Id="number_Of_Mud"></p>
-        <p Id="number_Of_Cobber"></p>
-        <p id="number_Of_Tin"></p>
-        <p Id="number_Of_Iron"></p>
-        <p id="number_Of_Bronze"></p>
-        
+
+        <div class="Inventory_Silver_Ore">
+            <img id="Silver_Ore_Inventory_IMG" src="../Zeptrico/Mining_Images/Silver_Ore_Locked.png" alt="">
+            <p Id="number_Of_Silver_Ore">Silver Ore 0</p>
+        </div>
+
+        <div class="Inventory_Gold_Ore">
+            <img id="Gold_Ore_Inventory_IMG" src="../Zeptrico/Mining_Images/Gold_Ore_Locked.png" alt="">
+            <p Id="number_Of_Gold_Ore">Gold Ore 0</p>
+        </div>
+
+        <div class="Inventory_Diamond">
+            <img id="Diamond_Inventory_IMG" src="../Zeptrico/Mining_Images/Diamond_Ore_Locked.png" alt="">
+            <p Id="number_Of_Diamond">Diamond 0</p>
+        </div>
+
+        <div class="Inventory_Cobber">
+            <img id="Cobber_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p Id="number_Of_Cobber">Cobber 0</p>
+        </div>
+
+        <div class="Inventory_Tin">
+            <img id="Tin_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p Id="number_Of_Tin">Tin 0</p>
+        </div>
+
+        <div class="Inventory_Iron">
+            <img id="Iron_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p Id="number_Of_Iron">Iron 0</p>
+        </div>
+
+        <div class="Inventory_Mud">
+            <img id="Mud_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p Id="number_Of_Mud">Mud 0</p>
+        </div>
+
+        <div class="Inventory_Bronze">
+            <img id="Bronze_Inventory_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p Id="number_Of_Bronze">Mud 0</p>
+        </div>
     </div>
 
     <button id="upgrade_Tool_Button" onclick="upgrade_Toll()">Upgrade 1 Mud</button>
 
-    <button id="crafting_Button" onclick="go_To_Crafting_Page()">Crafting</button>
+    <button id="crafting_Button" onclick="go_To_Crafting_Page()"><img src="../Zeptrico/MainScreen_IMG/Craft.png" alt=""></button>
 
-    <div class="Craft_Page">
-        <button id="Craft_Mud_Button" onclick="craft_Mud()">Craft mud: 2 Dirt</button>
-        <button id="Craft_Broze_Button" onclick="craft_Broze()">Craft Broze: 1 Tin and 1 Cobber</button>
+    <div class="Craft_Gui">
+        <button id="Close_Craft_Button" onclick="Clean_Craft_Gui()">Close</button>
+        <div class="Craft_Mud_Gui">
+            <img id="Craft_Mud_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p id="Craft_Mud_Name">Mud</p>
+            <p id="Craft_Mud_Need">You need 2 dirt</p>
+            <button id="Craft_Mud_Button" onclick="craft_Mud()">Craft</button>
+        </div>
+        <div class="Craft_Bronze_Gui">
+            <img id="Craft_Bronze_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p id="Craft_Bronze_Name">Bronze</p>
+            <p id="Craft_Bronze_Need">You need 1 Tin and 1 Cobber</p>
+            <button id="Craft_Bronze_Button" onclick="craft_Broze()">Craft</button>
+        </div>
+        
     </div>
 
     <button id="furness_Open_Button" onclick="Furness_Open_Function()">Furness</button>
@@ -95,15 +148,15 @@
         <button id="melt_Iron_Button" onclick="Start_Melt_Iron()">Melt Iron</button>
     </div>
     
-
-    <p id="Xp_Count"></p>
-    <div class="Xp_BackBar">
-        <div class="Xp_LevelBar">
-            <div class="Xp_Progress"></div>
+    <div class="Xp_Class">
+        <p id="Xp_Count"></p>
+        <div class="Xp_BackBar">
+            <div class="Xp_LevelBar">
+                <div class="Xp_Progress"></div>
+            </div>
         </div>
+        <h1 id="Level_Up_Text">Level up!!</h1>
     </div>
-    <h1 id="Level_Up_Text">Level up!!</h1>
-
     
 </body>
 </html>

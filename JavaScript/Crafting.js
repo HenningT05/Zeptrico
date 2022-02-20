@@ -1,18 +1,38 @@
-var Crafting_open = false
 
 function go_To_Crafting_Page(){
-    if (Crafting_open == false){
-        document.getElementById("Craft_Mud_Button").style.visibility="visible"; 
-        document.getElementById("Craft_Broze_Button").style.visibility="visible"; 
-        Crafting_open = true
-    }
-    else{
-        document.getElementById("Craft_Mud_Button").style.visibility="hidden"; 
-        document.getElementById("Craft_Broze_Button").style.visibility="hidden"; 
-        Crafting_open = false 
-    }
+    document.getElementsByClassName("Craft_Mud_Gui")[0].style.visibility="visible"; 
+    document.getElementsByClassName("Craft_Bronze_Gui")[0].style.visibility="visible"; 
+    document.getElementById("Craft_Mud_IMG").style.visibility="visible";
+    document.getElementById("Craft_Mud_Name").style.visibility="visible";
+    document.getElementById("Craft_Mud_Need").style.visibility="visible";
+    document.getElementById("Craft_Mud_Button").style.visibility="visible";
+
+    document.getElementById("Craft_Bronze_IMG").style.visibility="visible";
+    document.getElementById("Craft_Bronze_Name").style.visibility="visible";
+    document.getElementById("Craft_Bronze_Need").style.visibility="visible";
+    document.getElementById("Craft_Bronze_Button").style.visibility="visible";
+
+    document.getElementById("Close_Craft_Button").style.visibility="visible";
+    Clean_Main_Screen()
 }
 
+function Clean_Craft_Gui(){
+    console.log("good")
+    document.getElementsByClassName("Craft_Mud_Gui")[0].style.visibility="hidden"; 
+    document.getElementsByClassName("Craft_Bronze_Gui")[0].style.visibility="hidden"; 
+    document.getElementById("Craft_Mud_IMG").style.visibility="hidden";
+    document.getElementById("Craft_Mud_Name").style.visibility="hidden";
+    document.getElementById("Craft_Mud_Need").style.visibility="hidden";
+    document.getElementById("Craft_Mud_Button").style.visibility="hidden";
+
+    document.getElementById("Craft_Bronze_IMG").style.visibility="hidden";
+    document.getElementById("Craft_Bronze_Name").style.visibility="hidden";
+    document.getElementById("Craft_Bronze_Need").style.visibility="hidden";
+    document.getElementById("Craft_Bronze_Button").style.visibility="hidden";
+
+    document.getElementById("Close_Craft_Button").style.visibility="hidden";
+    Print_Main_Screen()
+}
 
 function craft_Mud(){
     if (Inventory[0] >= 2){

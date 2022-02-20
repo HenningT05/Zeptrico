@@ -103,19 +103,23 @@ function pick_Mining_Object(){
     }
     if (Silver_Chance_Of_Getting_Buttom <= random_Mining_Object && Silver_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Text').innerHTML = "Silver Ore";
-        document.getElementById("Mine_Get_Object_IMG").src="";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Silver_Ore.png";
+        document.getElementById("Silver_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Silver_Ore.png";
         Inventory[6] += 1
         document.getElementById('number_Of_Silver_Ore').innerHTML = `Silver Ore: ${Inventory[6]}`;
     }
     if (Gold_Chance_Of_Getting_Buttom <= random_Mining_Object && Gold_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Text').innerHTML = "Gold Ore";
-        document.getElementById("Mine_Get_Object_IMG").src="";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Gold_Ore.png";
+        document.getElementById("Gold_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Gold_Ore.png";
+        
         Inventory[7] += 1
         document.getElementById('number_Of_Gold_Ore').innerHTML = `Gold Ore: ${Inventory[7]}`;
     }
     if (Diamond_Chance_Of_Getting_Buttom <= random_Mining_Object && Diamond_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Text').innerHTML = "Diamond";
-        document.getElementById("Mine_Get_Object_IMG").src="";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        document.getElementById("Diamond_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
         Inventory[8] += 1
         document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
     }

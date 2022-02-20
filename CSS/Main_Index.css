@@ -1,42 +1,25 @@
-.Xp_BackBar{
-    position: relative;
-    left: 0px;
-    height: 25px;
-    width: 100%;
-    background-color: #964B00;
-}
-.Xp_LevelBar{
-    position: relative;
-    left: 3%;
-    bottom: -5px;
-    height: 15px;
-    width: 94%;
-    background-color: white;
-}
-
-.Xp_Progress{
-    position: relative;
-    height: 15px;
-    width: 0%;
-    background-color: green;
-}
-
-#Level_Up_Text{
-    visibility: hidden;
+body{
+    background-color: #987654;
 }
 
 
 .Object_Gotten{
     position: relative;
-    left: 20%;
+    left: 25%;
 
-    width: 50%;
-    height: 40%;
+    width: 40%;
+    height: 0%;
 
-    background-color: gray;
+    background-color: rgb(255, 219, 152);
+    border-radius: 16px;
 
     align-items: center;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
 }
+
 
 #Text{
     position: relative;
@@ -50,20 +33,57 @@
     border: 5em;
     border-color: #964B00;
     border-radius: 5px;
+    border-style: groove;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
 }
 
 #Mine_Get_Object_IMG{
     position: relative;
-    left: -3%;
-    top: 10px;
-}
+    left: -15%;
+    top: -20px;
 
+    transform: scale(0.8);
+}
 
 #TC_Level{
     position: fixed;
     top: -10px;
 
     color: black;
-    text-shadow: 1px 1px #50C878;
     text-decoration: underline;
+    text-shadow:0 0 10px #50C878,
+                0 0 20px #50C878, 
+                0 0 40px #50C878;
+}
+
+#Inventory_Button{
+    position:absolute;
+    left: 70%;
+    top: 25%;
+
+    background-color: transparent;
+    border: none;
+    transform: scale(1);
+}
+#upgrade_Tool_Button{
+    position: absolute;
+    left: 30%;
+    top: 65%;
+}
+#crafting_Button{
+    position: absolute;
+    left: 70%;
+    top: 40%;
+
+    background-color: transparent;
+    border: none;
+    transform: scale(1);
+}
+#furness_Open_Button{
+    position: absolute;
+    left: 75%;
+    top: 60%;
 }

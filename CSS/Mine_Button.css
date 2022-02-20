@@ -1,11 +1,13 @@
 .Start_Mining_Button_Div{
-    position: relative;
-    left: 0px;
+    position: absolute;
+    top: 40%;
+    left: 18px;
 }
 
 #Start_Mine_Button{
     position: absolute;
     left: 50px;
+    
 
     width: 200px;
     height: 200px;
@@ -17,6 +19,6 @@
 }
 
 #Mine_Button_IMG{
-    position: relative;
+    position: absolute;
     left: 45px;
 }

@@ -1,8 +1,194 @@
+#Close_Craft_Button{
+    visibility: hidden;
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+}
+
+
+.Craft_Mud_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 20px;
+    top: 50px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+
+
+#Craft_Mud_IMG{
+    visibility: hidden;
+
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+#Craft_Mud_Name{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Mud_Need{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 110px;
+    text-align: center;
+}
+
 #Craft_Mud_Button{
     visibility: hidden;
+
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 110px;
+    text-align: center;
 }
 
-#Craft_Broze_Button{
+
+.Craft_Bronze_Gui{
     visibility: hidden;
+
+    position: absolute;
+
+    left: 54%;
+    top: 50px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
 }
 
+#Craft_Bronze_IMG{
+    visibility: hidden;
+
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+#Craft_Bronze_Name{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Bronze_Need{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 110px;
+    text-align: center;
+}
+
+#Craft_Bronze_Button{
+    visibility: hidden;
+    
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 110px;
+    text-align: center;
+}

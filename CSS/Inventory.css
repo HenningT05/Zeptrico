@@ -1,17 +1,43 @@
 .Inventory{
-    position: relative;
-
-    top: 00px;
+    position: absolute;
+    top: 300px;
 }
 
+#Inventory_Head_Title{
+    visibility: hidden;
 
+    position: absolute;
+    top: -300px;
+    left: 110px;
+
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    color: blanchedalmond;
+    text-shadow: 2px 2px black
+}
+
+#Close_Inventory_Button{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -270px;
+    left: 25px;
+    
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+}
 
 .Inventory_Dirt{
     visibility: hidden;
 
-    position: relative;
+    position: absolute;
 
     left: 4%;
+    top: -230px;
 
     width: 100px;
     height: 150px;
@@ -53,10 +79,10 @@
 .Inventory_Stone{
     visibility: hidden;
 
-    position: relative;
+    position: absolute;
 
-    left: 36%;
-    top: -154px;
+    left: 125px;
+    top: -230px;
 
     width: 100px;
     height: 150px;
@@ -98,10 +124,10 @@
 .Inventory_Coal{
     visibility: hidden;
 
-    position: relative;
+    position: absolute;
 
-    left: 68%;
-    top: -308px;
+    left: 250px;
+    top: -230px;
 
     width: 100px;
     height: 150px;
@@ -144,10 +170,10 @@
 .Inventory_Cobber_Ore{
     visibility: hidden;
 
-    position: relative;
+    position: absolute;
 
     left: 4%;
-    top: -300px;
+    top: -50px;
 
     width: 100px;
     height: 150px;
@@ -189,10 +215,10 @@
 .Inventory_Tin_Ore{
     visibility: hidden;
 
-    position: relative;
+    position: absolute;
 
-    left: 36%;
-    top: -454px;
+    left: 125px;
+    top: -50px;
 
     width: 100px;
     height: 150px;
@@ -234,10 +260,10 @@
 .Inventory_Iron_Ore{
     visibility: hidden;
 
-    position: relative;
+    position: absolute;
 
-    left: 68%;
-    top: -608px;
+    left: 250px;
+    top: -50px;
 
     width: 100px;
     height: 150px;
@@ -258,6 +284,370 @@
     transform: scale(0.5);
 }
 #number_Of_Iron_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Silver_Ore{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 130px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Silver_Ore_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Silver_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Gold_Ore{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 130px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Gold_Ore_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.4);
+}
+#number_Of_Gold_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Diamond{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 130px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Diamond_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.4);
+}
+#number_Of_Diamond{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Cobber{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 310px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Cobber_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Cobber{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Tin{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 310px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Tin_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Tin{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Iron{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 310px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Iron_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Iron{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Mud{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 490px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Mud_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Mud{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Bronze{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 490px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Bronze_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Bronze{
     visibility: hidden;
 
     position: relative;

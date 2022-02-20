@@ -1,0 +1,41 @@
+.Xp_BackBar{
+    position: absolute;
+    left: 0px;
+    top: 85%;
+    height: 25px;
+    width: 100%;
+    background-color: #964B00;
+    border-radius: 5px;
+}
+.Xp_LevelBar{
+    position: absolute;
+    left: 3%;
+    bottom: 5px;
+    height: 15px;
+    width: 94%;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.Xp_Progress{
+    position: absolute;
+    height: 15px;
+    width: 0%;
+    background-color: green;
+
+    border-radius: 7px;
+}
+
+#Xp_Count{
+    position: absolute;
+    top: 83.3%;
+    left: 3%;
+
+    color: wheat;
+
+    z-index: 1;
+}
+
+#Level_Up_Text{
+    visibility: hidden;
+}
