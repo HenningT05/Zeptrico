@@ -4,6 +4,20 @@ var xp_Prosent_Andel = 0
 
 var Level_Exeler = 115
 
+var Coin_Increes = 15
+
+async function Print_Level_Up_Screen(){
+    document.getElementsByClassName("Level_Up_GUI")[0].style.visibility = "visible";
+    document.getElementById("Level_Up_Text").style.visibility="visible"; 
+    document.getElementById("Level_AC").style.visibility="visible"; 
+    document.getElementById("LevelUp_Get_Coin").style.visibility="visible"; 
+    document.getElementById("LevelUp_Get_Craft_card").style.visibility="visible"; 
+
+    document.getElementById('Level_Up_Text').innerHTML = `Level Up`;
+    document.getElementById('Level_AC').innerHTML = `Level ${Level}`;
+}
+
+
 async function Xp_Level_Check(){
     var prsoent_Xp = (xp / Xp_To_Next_Level * 100)
     xp_Prosent_Andel += prsoent_Xp
@@ -48,9 +62,13 @@ async function Xp_Level_Check(){
 
         x = xp_Prosent_Andel
 
+        Coin = Coin + Coin_Increes
+
+        Coin_Increes = Coin_Increes * 1.05
+
         await delay(2);
         document.getElementById("Level_Up_Text").style.visibility="hidden"; 
         document.getElementsByClassName("Xp_Progress")[0].style.width = `${xp_Prosent_Andel}%`;
-        document.getElementById('Xp_Count').innerHTML = `XP ${xp_Prosent_Show_Data} %`;
+        Print_Level_Up_Screen()
     }
 }

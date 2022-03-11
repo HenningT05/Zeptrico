@@ -1,0 +1,551 @@
+#Market_Close_Button{
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+}
+
+.Market_Gui{
+    position: absolute;
+    top: 160px;
+    width: 96%;
+    visibility: hidden;
+}
+
+.Dirt_Market_Gui{
+    visibility: hidden;
+
+    width: 98%;
+    height: 50px;
+
+    position: absolute;
+    left: 0%;
+    top: -100px;
+
+    background-color: #795644;
+
+    border-radius: 8px 8px 0px 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Dirt_Market_Name{
+    visibility: hidden;
+
+    position: relative;
+    left: 3%;
+    top: -15px;
+
+    font-size: 22px;
+    color: white;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Dirt_Market_IMG_Gui{
+    visibility: hidden;
+
+    position: relative;
+
+    top: 2px;
+    left: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color:#a1785c;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Dirt_Market_IMG{
+    visibility: hidden;
+    transform: scale(0.3);
+
+    position: relative;
+
+    top: -78px;
+    left: -80px;
+}
+
+#Market_Number_OF_Dirt{
+    visibility: hidden;
+
+    position: relative;
+    top: -55px;
+    left: 50%;
+
+    font-size: 25px;
+    
+    color: white;
+}
+
+#Dirt_Market_Buy{
+    visibility: hidden;
+
+    position: relative;
+    top: -65px;
+    left: 43%;
+
+    height: 28px;
+
+    font-size: 20px;
+
+    background-color: #c38452;
+    color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Dirt_Market_Sell1{
+    visibility: hidden;
+
+    position: relative;
+    top: -65px;
+    left: 43.5%;
+
+    height: 28px;
+
+    font-size: 18px;
+
+    background-color: #a56938;
+    color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Dirt_Market_Sell_All{
+    visibility: hidden;
+
+    position: relative;
+    top: -65px;
+    left: 43.5%;
+
+    height: 28px;
+
+    font-size: 18px;
+
+    background-color: #85542b;
+    color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+.Dirt_Market_Under_Gui{
+    visibility: hidden;
+
+    position: relative;
+    width: 40%;
+    height: 45px;
+
+    left: -0.5%;
+    top: -53px;
+
+    background-color:#c39b77;
+
+    border-radius: 0px 0px 12px 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-top: none;
+
+    border-width: 2px;
+
+    z-index: -1;
+}
+
+.Market_Dirt_Coin_Gui{
+    visibility: hidden;
+
+    position: relative;
+    width: 59.6%;
+    height: 30px;
+
+    left: 40%;
+    top: -100px;
+
+    background-color:burlywood;
+
+    border-radius: 4% 0px 12px 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-top: none;
+
+    border-width: 2px;
+}
+
+.Dirt_Buy_One_Class{
+    position: absolute;
+    left: 10px;
+    top:5px;
+    width: 50px;
+    height: 20px;
+    background-color: #c38452;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Dirt_Buy_Price{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -20px;
+    left: 5px;
+
+    color: #FFFAF0;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.Dirt_Sell_One_Class{
+    position: absolute;
+    left: 70px;
+    top:5px;
+    width: 50px;
+    height: 20px;
+    background-color: #a56938;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Dirt_Sell_Price{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -20px;
+    left: 5px;
+
+    color: #FFFAF0;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.Dirt_Sell_All_Class{
+    position: absolute;
+    left: 135px;
+    top:5px;
+    width: 50px;
+    height: 20px;
+    background-color: #85542b;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Dirt_Sell_Price_All{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -20px;
+    left: 5px;
+
+    color: #FFFAF0;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+/*------------------------------------------------------------*/ 
+
+.Stone_Market_Gui{
+    visibility: hidden;
+
+    width: 98%;
+    height: 50px;
+
+    position: absolute;
+    left: 0%;
+    top: 20px;
+
+    background-color: #795644;
+
+    border-radius: 8px 8px 0px 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Stone_Market_Name{
+    visibility: hidden;
+
+    position: relative;
+    left: 2%;
+    top: -15px;
+
+    font-size: 22px;
+    color: white;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Stone_Market_IMG_Gui{
+    visibility: hidden;
+
+    position: relative;
+
+    top: 00px;
+    left: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color:#a1785c;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Stone_Market_IMG{
+    visibility: hidden;
+    transform: scale(0.3);
+
+    position: relative;
+
+    top: -78px;
+    left: -80px;
+}
+
+#Market_Number_OF_Stone{
+    visibility: hidden;
+
+    position: relative;
+    top: -60px;
+    left: 50%;
+
+    font-size: 25px;
+    
+    color: white;
+}
+
+#stone_Market_Buy{
+    visibility: hidden;
+
+    position: relative;
+    top: -65px;
+    left: 43%;
+
+    height: 28px;
+
+    font-size: 20px;
+
+    background-color: #c38452;
+    color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Stone_Market_Sell1{
+    visibility: hidden;
+
+    position: relative;
+    top: -65px;
+    left: 43.5%;
+
+    height: 28px;
+
+    font-size: 18px;
+
+    background-color: #a56938;
+    color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Stone_Market_Sell_All{
+    visibility: hidden;
+
+    position: relative;
+    top: -65px;
+    left: 43.5%;
+
+    height: 28px;
+
+    font-size: 18px;
+
+    background-color: #85542b;
+    color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+.Stone_Market_Under_Gui{
+    visibility: hidden;
+
+    position: relative;
+    width: 40%;
+    height: 45px;
+
+    left: -0.5%;
+    top: -53px;
+
+    background-color:#c39b77;
+
+    border-radius: 0px 0px 12px 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-top: none;
+
+    border-width: 2px;
+
+    z-index: -1;
+}
+
+.Market_Stone_Coin_Gui{
+    visibility: hidden;
+
+    position: relative;
+    width: 59.6%;
+    height: 30px;
+
+    left: 40%;
+    top: -100px;
+
+    background-color:burlywood;
+
+    border-radius: 4% 0px 12px 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-top: none;
+
+    border-width: 2px;
+}
+
+.Stone_Buy_One_Class{
+    position: absolute;
+    left: 10px;
+    top:5px;
+    width: 50px;
+    height: 20px;
+    background-color: #c38452;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Stone_Buy_Price{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -20px;
+    left: 5px;
+
+    color: #FFFAF0;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+
+.Stone_Sell_One_Class{
+    position: absolute;
+    left: 70px;
+    top:5px;
+    width: 50px;
+    height: 20px;
+    background-color: #a56938;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Stone_Sell_Price{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -20px;
+    left: 5px;
+
+    color: #FFFAF0;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+
+.Stone_Sell_All_Class{
+    position: absolute;
+    left: 135px;
+    top:5px;
+    width: 50px;
+    height: 20px;
+    background-color: #85542b;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+}
+
+#Stone_Sell_Price_All{
+    visibility: hidden;
+
+    position: absolute;
+
+    top: -20px;
+    left: 5px;
+
+    color: #FFFAF0;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+
+#Market_Price_Coin_IMG{
+    position: relative;
+    top:-35px;
+    left: 10px;
+
+    transform: scale(0.6);
+}
+

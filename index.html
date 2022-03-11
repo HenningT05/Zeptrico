@@ -12,6 +12,7 @@
     <script src="../Zeptrico/JavaScript/Melting_Metall.js"></script>
     <script src="../Zeptrico/JavaScript/Inventory.js"></script>
     <script src="../Zeptrico/JavaScript/Clean_Screen.js"></script>
+    <script src="../Zeptrico/JavaScript/Market.js"></script>
 
     <link href="../Zeptrico/CSS/Craft.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Furness.css" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link href="../Zeptrico/CSS/Mine_Button.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Inventory.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/XP_Bar.css" rel="stylesheet">
+    <link href="../Zeptrico/CSS/Market.css" rel="stylesheet" >
 </head>
 <body>
 
@@ -27,6 +29,15 @@
         <div class="Top_Corer_Text">
             <p id="TC_Level">Level 1</p>
         </div>
+    </div>
+
+    <div>
+        <p id="Coins_TC">0</p>
+        <img id="Coin_TC_IMG" src="" alt="">
+    </div>
+    <div>
+        <p id="Craft_Card_TC"></p>
+        <img id="Craft_Card_TC_IMG" src="" alt="">
     </div>
 
     <div class="Loot_Get">
@@ -143,9 +154,81 @@
     <button id="furness_Open_Button" onclick="Furness_Open_Function()">Furness</button>
 
     <div class="melting_Ores">
-        <button id="melt_Cobber_Button" onclick="Start_Melt_Cobber()">Melt Cobber</button>
+        <div class="Furness_Gui">
+
+        </div>
+        <div class="Melt_Cobber_Gui">
+            <div class="Melt_Cobber_Ore_IMG_Gui">
+                <img id="Melt_Cobber_ore_Gui" src="" alt="">
+                <p id="Melt_Cobber_Ore_Number">0</p>
+            </div>
+            <img id="Cobber_Ore_Pluss" src="" alt="">
+            <div class="Melt_Cobber_Ore_Coal_IMG_Gui">
+                <img id="Melt_Cobber_coal" src="" alt="">
+                <p id="Melt_Cobber_Coal_Number">0</p>
+            </div>
+            <img id="Cobber_Ore_Arrow" src="" alt="">
+            <div class="Melt_Cobber_IMG_Gui">
+                <img id="Melt_Cobber_Resalt_IMG" src="" alt="">
+            </div>
+            <button id="Melt_Cobber_Button" onclick="Start_Melt_Cobber()">Melt</button>
+        </div>
+        
         <button id="melt_Tin_Button" onclick="start_Melt_Tin()">Melt Tin</button>
         <button id="melt_Iron_Button" onclick="Start_Melt_Iron()">Melt Iron</button>
+    </div>
+
+    <button id="Market_Open_Button" onclick="Open_Market()">Market</button>
+    <button id="Market_Close_Button" onclick="Close_Market()">Close</button>
+
+    <div class="Market_Gui">
+        <div class="Dirt_Market_Gui">
+            <p id="Dirt_Market_Name">DIRT</p>
+            <button id="Dirt_Market_Buy" onclick="Buy_Dirt()">Buy</button>
+            <button id="Dirt_Market_Sell1" onclick="Sell_Dirt1()">Sell 1</button>
+            <button id="Dirt_Market_Sell_All" onclick="Sell_Dirt_All()">Sell All</button>
+            <div class="Dirt_Market_Under_Gui">
+                <div class="Dirt_Market_IMG_Gui">
+                    <img id="Dirt_Market_IMG" src="../Zeptrico/Mining_Images/Dirt.png" alt="">
+                </div>
+                <p id="Market_Number_OF_Dirt">0</p>
+            </div>
+            <div class="Market_Dirt_Coin_Gui">
+                <div class="Dirt_Buy_One_Class"> 
+                    <p id="Dirt_Buy_Price">4$</p>
+                </div>
+                <div class="Dirt_Sell_One_Class">
+                    <p id="Dirt_Sell_Price">2$</p>
+                </div>
+                <div class="Dirt_Sell_All_Class">
+                    <p id="Dirt_Sell_Price_All">0$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Stone_Market_Gui">
+            <p id="Stone_Market_Name">STONE</p>
+            <button id="stone_Market_Buy" onclick="Buy_Dirt()">Buy</button>
+            <button id="Stone_Market_Sell1" onclick="Sell_Dirt1()">Sell 1</button>
+            <button id="Stone_Market_Sell_All" onclick="Sell_Dirt_All()">Sell All</button>
+            <div class="Stone_Market_Under_Gui">
+                <div class="Stone_Market_IMG_Gui">
+                    <img id="Stone_Market_IMG" src="../Zeptrico/Mining_Images/Stone.png" alt="">
+                </div>
+                <p id="Market_Number_OF_Stone">0</p>
+            </div>
+            <div class="Market_Stone_Coin_Gui">
+                <div class="Stone_Buy_One_Class"> 
+                    <p id="Stone_Buy_Price">100 <img id="Market_Price_Coin_IMG" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Stone_Sell_One_Class">
+                    <p id="Stone_Sell_Price">3$</p>
+                </div>
+                <div class="Stone_Sell_All_Class">
+                    <p id="Stone_Sell_Price_All">0$</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="Xp_Class">
@@ -155,7 +238,14 @@
                 <div class="Xp_Progress"></div>
             </div>
         </div>
-        <h1 id="Level_Up_Text">Level up!!</h1>
+    </div>
+
+    <div class="Level_Up_GUI">
+        <h1 id="Level_Up_Text">Level Up</h1>
+        <p id="Level_AC"></p>
+
+        <p id="LevelUp_Get_Coin"></p>
+        <p id="LevelUp_Get_Craft_card"></p>
     </div>
     
 </body>

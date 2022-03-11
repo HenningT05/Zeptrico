@@ -65,6 +65,22 @@ function Furness_Open_Function(){
     if (Furness_Opend == false){
         console.log("Open furness")
         Furness_Opend = true
+
+        document.getElementsByClassName("Melt_Cobber_Gui")[0].style.visibility="visible"; 
+        document.getElementsByClassName("Melt_Cobber_Ore_IMG_Gui")[0].style.visibility="visible"; 
+        document.getElementsByClassName("Melt_Cobber_Ore_Coal_IMG_Gui")[0].style.visibility="visible"; 
+        document.getElementsByClassName("Melt_Cobber_IMG_Gui")[0].style.visibility="visible"; 
+
+        document.getElementById("Melt_Cobber_ore_Gui").style.visibility="visible";
+        document.getElementById("Melt_Cobber_Ore_Number").style.visibility="visible";
+        document.getElementById("Melt_Cobber_coal").style.visibility="visible";
+        document.getElementById("Melt_Cobber_Coal_Number").style.visibility="visible";
+        document.getElementById("Melt_Cobber_Resalt_IMG").style.visibility="visible";
+        document.getElementById("Melt_Cobber_Button").style.visibility="visible";
+
+
+
+        
         if (Inventory[3] > 0 ){
             document.getElementById("melt_Cobber_Button").style.visibility="visible";     
             console.log(Inventory[3], "Cobber ore")  
@@ -77,12 +93,26 @@ function Furness_Open_Function(){
             document.getElementById("melt_Tin_Button").style.visibility="visible"; 
             console.log(Inventory[4], "Tin ore")   
         }
+        Clean_Main_Screen()
     }
     else{
         console.log("close furness")
         Furness_Opend = false
+        document.getElementsByClassName("Melt_Cobber_Gui")[0].style.visibility="hidden"; 
+        document.getElementsByClassName("Melt_Cobber_Ore_IMG_Gui")[0].style.visibility="hidden"; 
+        document.getElementsByClassName("Melt_Cobber_Ore_Coal_IMG_Gui")[0].style.visibility="hidden"; 
+        document.getElementsByClassName("Melt_Cobber_IMG_Gui")[0].style.visibility="hidden"; 
+
+        document.getElementById("Melt_Cobber_ore_Gui").style.visibility="hidden";
+        document.getElementById("Melt_Cobber_Ore_Number").style.visibility="hidden";
+        document.getElementById("Melt_Cobber_coal").style.visibility="hidden";
+        document.getElementById("Melt_Cobber_Coal_Number").style.visibility="hidden";
+        document.getElementById("Melt_Cobber_Resalt_IMG").style.visibility="hidden";
+        document.getElementById("Melt_Cobber_Button").style.visibility="hidden";
+
         document.getElementById("melt_Iron_Button").style.visibility="hidden";  
         document.getElementById("melt_Cobber_Button").style.visibility="hidden";
-        document.getElementById("melt_Tin_Button").style.visibility="hidden";        
+        document.getElementById("melt_Tin_Button").style.visibility="hidden";    
+        Print_Main_Screen()    
     }
 }
