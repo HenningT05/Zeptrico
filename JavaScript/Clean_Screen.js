@@ -6,7 +6,7 @@ function Print_Main_Screen(){
     document.getElementById("TC_Level").style.visibility="visible"; 
 
     document.getElementsByClassName("Object_Gotten")[0].style.visibility="visible"; 
-    document.getElementById("Text").style.visibility="visible"; 
+    document.getElementById("Object_Get_Text").style.visibility="visible"; 
     document.getElementById("Mine_Get_Object_IMG").style.visibility="visible"; 
 
     document.getElementsByClassName("Start_Mining_Button_Div")[0].style.visibility="visible"; 
@@ -33,7 +33,7 @@ function Clean_Main_Screen(){
     document.getElementById("TC_Level").style.visibility="Hidden"; 
 
     document.getElementsByClassName("Object_Gotten")[0].style.visibility="Hidden"; 
-    document.getElementById("Text").style.visibility="Hidden"; 
+    document.getElementById("Object_Get_Text").style.visibility="Hidden"; 
     document.getElementById("Mine_Get_Object_IMG").style.visibility="Hidden"; 
 
     document.getElementsByClassName("Start_Mining_Button_Div")[0].style.visibility="Hidden"; 

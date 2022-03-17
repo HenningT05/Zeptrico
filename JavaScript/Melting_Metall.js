@@ -63,8 +63,9 @@ function Start_Melt_Iron(){
 
 function Furness_Open_Function(){
     if (Furness_Opend == false){
-        console.log("Open furness")
         Furness_Opend = true
+
+        document.getElementById("Close_Furness_Butto").style.visibility="visible";
 
         document.getElementsByClassName("Melt_Cobber_Gui")[0].style.visibility="visible"; 
         document.getElementsByClassName("Melt_Cobber_Ore_IMG_Gui")[0].style.visibility="visible"; 
@@ -96,8 +97,10 @@ function Furness_Open_Function(){
         Clean_Main_Screen()
     }
     else{
-        console.log("close furness")
         Furness_Opend = false
+
+        document.getElementById("Close_Furness_Butto").style.visibility="hidden";
+
         document.getElementsByClassName("Melt_Cobber_Gui")[0].style.visibility="hidden"; 
         document.getElementsByClassName("Melt_Cobber_Ore_IMG_Gui")[0].style.visibility="hidden"; 
         document.getElementsByClassName("Melt_Cobber_Ore_Coal_IMG_Gui")[0].style.visibility="hidden"; 
@@ -111,7 +114,7 @@ function Furness_Open_Function(){
         document.getElementById("Melt_Cobber_Button").style.visibility="hidden";
 
         document.getElementById("melt_Iron_Button").style.visibility="hidden";  
-        document.getElementById("melt_Cobber_Button").style.visibility="hidden";
+        document.getElementById("Melt_Cobber_Button").style.visibility="hidden";
         document.getElementById("melt_Tin_Button").style.visibility="hidden";    
         Print_Main_Screen()    
     }

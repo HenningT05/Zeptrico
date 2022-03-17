@@ -42,8 +42,10 @@
 
     <div class="Loot_Get">
         <div class="Object_Gotten">
-            <p id=Text></p>
-            <img id="Mine_Get_Object_IMG" src="" alt="">
+            <p id=Object_Get_Text></p>
+            <div class="Object_Get_Inner_Bar">
+                <img id="Mine_Get_Object_IMG" src="" alt="">
+            </div>
         </div>
     </div>
 
@@ -154,6 +156,7 @@
     <button id="furness_Open_Button" onclick="Furness_Open_Function()">Furness</button>
 
     <div class="melting_Ores">
+        <button id="Close_Furness_Butto" onclick="Furness_Open_Function()">Close</button>
         <div class="Furness_Gui">
 
         </div>
@@ -258,11 +261,25 @@
     </div>
 
     <div class="Level_Up_GUI">
-        <h1 id="Level_Up_Text">Level Up</h1>
-        <p id="Level_AC"></p>
+        <h1 id="Level_Up_Text">LEVEL UP</h1>
+        <div class="LevelUp_Get_Shit_Gui">
+            <div class="LevelUp_Get_Coin_Gui">
+                <p id="LevelUp_Get_Coin_Name">ZEPTIUMS</p>
+                <div class="LevelUp_Get_Coin_IMG_BG">
+                    <img id="LevelUp_Get_Coin_IMG" src="../Zeptrico/MainScreen_IMG/Coin.png" alt="">
+                </div>
+                <p id="LevelUp_Get_Coin">100+</p>
+            </div>
 
-        <p id="LevelUp_Get_Coin"></p>
-        <p id="LevelUp_Get_Craft_card"></p>
+            <div class="LevelUp_Get_Craft_Card_Gui">
+                <p id="LevelUp_Craft_Card_Name">CRAFT CARDS</p>
+                <div class="LevelUp_Craft_Card_IMG_BC">
+                    <img id="LevelUp_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                </div>
+                <p id="LevelUp_Get_Craft_card">100+</p>
+            </div>
+            <p id="Level_AC">Level 2</p>
+        </div>
     </div>
     
 </body>

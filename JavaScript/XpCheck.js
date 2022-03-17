@@ -6,6 +6,18 @@ var Level_Exeler = 115
 
 var Coin_Increes = 15
 
+function Hide_Level_Up_Screen(){
+    document.getElementById("Start_Mine_Button").style.visibility="visible"; 
+    document.getElementById("Level_Up_Text").style.visibility="hidden"; 
+    document.getElementsByClassName("Level_Up_GUI")[0].style.visibility = "hidden";
+    document.getElementById("Level_AC").style.visibility="hidden"; 
+    document.getElementById("LevelUp_Get_Coin").style.visibility="hidden"; 
+    document.getElementById("LevelUp_Get_Craft_card").style.visibility="hidden"; 
+
+    document.getElementById('Xp_Count').innerHTML = `XP ${xp_Prosent_Show_Data} %`;
+
+}
+
 async function Print_Level_Up_Screen(){
     document.getElementsByClassName("Level_Up_GUI")[0].style.visibility = "visible";
     document.getElementById("Level_Up_Text").style.visibility="visible"; 
@@ -15,6 +27,9 @@ async function Print_Level_Up_Screen(){
 
     document.getElementById('Level_Up_Text').innerHTML = `Level Up`;
     document.getElementById('Level_AC').innerHTML = `Level ${Level}`;
+
+    await delay(4);
+    Hide_Level_Up_Screen()   
 }
 
 
@@ -38,10 +53,13 @@ async function Xp_Level_Check(){
     
     if (xp_Prosent_Andel >= 100){
         Level += 1
+        document.getElementById("Start_Mine_Button").style.visibility="hidden"; 
+
         document.getElementById('Level_Up_Text').innerHTML = `Level Up ${Level} !!`;
         document.getElementById('TC_Level').innerHTML = `Level ${Level}`;
-        document.getElementById("Level_Up_Text").style.visibility="visible"; 
         document.getElementsByClassName("Xp_Progress")[0].style.width = `0%`;
+
+        
         
         xp = 0
         Xp_To_Next_Level = Xp_To_Next_Level / 100 * Level_Exeler
@@ -65,9 +83,6 @@ async function Xp_Level_Check(){
         Coin = Coin + Coin_Increes
 
         Coin_Increes = Coin_Increes * 1.05
-
-        await delay(2);
-        document.getElementById("Level_Up_Text").style.visibility="hidden"; 
         document.getElementsByClassName("Xp_Progress")[0].style.width = `${xp_Prosent_Andel}%`;
         Print_Level_Up_Screen()
     }

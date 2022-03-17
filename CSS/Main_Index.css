@@ -4,14 +4,13 @@ body{
 
 
 .Object_Gotten{
-    position: relative;
+    position: absolute;
     left: 25%;
 
     width: 40%;
-    height: 0%;
+    height: 30%;
 
-    background-color: rgb(255, 219, 152);
-    border-radius: 16px;
+    background-color: #a1785c;
 
     align-items: center;
     border-style: groove;
@@ -20,15 +19,29 @@ body{
     border-radius: 6px;
 }
 
-
-#Text{
+.Object_Get_Inner_Bar{
     position: relative;
-    left: 40%;
-    top: 10px;
+    left: 7px;
+
+    width: 90%;
+    height: 60%;
+    background-color: #795644;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+
+#Object_Get_Text{
+    position: relative;
+    left: 5%;
+    top: 0px;
 
     background-color: wheat;
-    height: 15%;
-    width: 20%;
+    height: 10%;
+    width: 90%;
     text-align: center;
     border: 5em;
     border-color: #964B00;
@@ -42,10 +55,10 @@ body{
 
 #Mine_Get_Object_IMG{
     position: relative;
-    left: -15%;
-    top: -20px;
+    left: -20%;
+    top: -35px;
 
-    transform: scale(0.8);
+    transform: scale(0.75);
 }
 
 #TC_Level{
