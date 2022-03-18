@@ -4,8 +4,11 @@ body{
 
 
 .Object_Gotten{
+    visibility: visible;
+
     position: absolute;
-    left: 25%;
+    left: 27%;
+    top: 25%;
 
     width: 40%;
     height: 30%;
@@ -59,17 +62,6 @@ body{
     top: -35px;
 
     transform: scale(0.75);
-}
-
-#TC_Level{
-    position: fixed;
-    top: -10px;
-
-    color: black;
-    text-decoration: underline;
-    text-shadow:0 0 10px #50C878,
-                0 0 20px #50C878, 
-                0 0 40px #50C878;
 }
 
 #Inventory_Button{

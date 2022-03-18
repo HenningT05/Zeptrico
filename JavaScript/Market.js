@@ -1,4 +1,4 @@
-var Coin = 0
+
 
 var Sell_All_Price_Dirt = 0
 var Sell_All_Price_Stone = 0

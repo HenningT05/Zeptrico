@@ -4,7 +4,11 @@ var xp_Prosent_Andel = 0
 
 var Level_Exeler = 115
 
+var Coin_Get_LevelUp = 30
 var Coin_Increes = 15
+
+var Craft_Card_Get_LevelUp = 5
+var Craft_Card_Increes = 2
 
 function Hide_Level_Up_Screen(){
     document.getElementById("Start_Mine_Button").style.visibility="visible"; 
@@ -30,6 +34,21 @@ async function Print_Level_Up_Screen(){
 
     await delay(4);
     Hide_Level_Up_Screen()   
+}
+
+function Get_LevelUp_Lot(){
+    Coin += Coin_Get_LevelUp
+    Craft_Card += Craft_Card_Get_LevelUp
+
+    document.getElementById('Coins_TC').innerHTML = Coin;
+    document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+
+    document.getElementById('LevelUp_Get_Coin').innerHTML = Coin_Get_LevelUp + " +";
+    document.getElementById('LevelUp_Get_Craft_card').innerHTML = Craft_Card_Get_LevelUp + " +";
+
+    Coin_Get_LevelUp += Coin_Increes
+    Craft_Card_Get_LevelUp += Craft_Card_Increes
+    Print_Level_Up_Screen()
 }
 
 
@@ -79,11 +98,7 @@ async function Xp_Level_Check(){
         xp_Prosent_Show_Data = xp_Prosent_Andel.toFixed(0)
 
         x = xp_Prosent_Andel
-
-        Coin = Coin + Coin_Increes
-
-        Coin_Increes = Coin_Increes * 1.05
         document.getElementsByClassName("Xp_Progress")[0].style.width = `${xp_Prosent_Andel}%`;
-        Print_Level_Up_Screen()
+        Get_LevelUp_Lot()
     }
 }

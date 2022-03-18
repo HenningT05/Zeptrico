@@ -2,7 +2,7 @@ var Next_Gui = ""
 var Screen_Clead = false
 
 function Print_Main_Screen(){
-    document.getElementsByClassName("Top_Corer_Text")[0].style.visibility="visible"; 
+    document.getElementsByClassName("TC_Gui")[0].style.visibility="visible"; 
     document.getElementById("TC_Level").style.visibility="visible"; 
 
     document.getElementsByClassName("Object_Gotten")[0].style.visibility="visible"; 
@@ -29,7 +29,7 @@ function Print_Main_Screen(){
 
 
 function Clean_Main_Screen(){
-    document.getElementsByClassName("Top_Corer_Text")[0].style.visibility="Hidden"; 
+    document.getElementsByClassName("TC_Gui")[0].style.visibility="Hidden"; 
     document.getElementById("TC_Level").style.visibility="Hidden"; 
 
     document.getElementsByClassName("Object_Gotten")[0].style.visibility="Hidden"; 

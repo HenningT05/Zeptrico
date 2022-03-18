@@ -4,14 +4,7 @@ var mining_Speed = 2
 var meters_Down = 0
 var random_Mining_Object = 0 
 
-var xp = 0
-var Level = 1
-
 var xp_Incressment = 0
-
-const Inventory = [/*Dirt  0*/ 0,   /*Stone  1*/ 0,   /*Coal  2*/ 0,   /*Cobber ore 3*/ 0,   /*Tin ore  4*/0,   /*Iron ore  5*/0,   /*Silver ore  6*/0,   /*Gold ore 7*/0,   /*Diamond  8*/0]
-const Craft_Inventory = [/*Mud  0*/0,   /*Bronze  1*/0]
-const Melt_Inventory = [/*Cobber  0*/0,   /*Tin  1*/0,   /*Iron   2*/0]
 
 var Dirt_Chance_Of_Getting_Top = -1
 var Dirt_Chance_Of_Getting_Buttom = -1

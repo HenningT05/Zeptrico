@@ -1,7 +1,10 @@
 .Start_Mining_Button_Div{
     position: absolute;
-    top: 40%;
-    left: 18px;
+    top: 58%;
+    align-items: center;
+    left: 15%;
+
+    transform: scale(0.8);
 }
 
 #Start_Mine_Button{

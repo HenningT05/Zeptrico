@@ -1,7 +1,7 @@
 .Xp_BackBar{
     position: absolute;
     left: 0px;
-    top: 75%;
+    top: 85%;
     height: 25px;
     width: 100%;
     background-color: #964B00;
@@ -140,9 +140,11 @@
     position: relative;
 
     top: -60px;
-    left: 23px;
+    text-align: center;
 
     color: white;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .LevelUp_Get_Craft_Card_Gui{
@@ -202,7 +204,8 @@
     position: relative;
 
     top: -5px;
-    left: 30%;
+
+    text-align: center;
 
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
