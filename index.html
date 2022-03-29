@@ -15,6 +15,7 @@
     <script src="../Zeptrico/JavaScript/Clean_Screen.js"></script>
     <script src="../Zeptrico/JavaScript/Market.js"></script>
     <script src="../Zeptrico/JavaScript/TC_Clock.js"></script>
+    <script src="../Zeptrico/JavaScript/Upgrade_Ship.js"></script>
 
     <link href="../Zeptrico/CSS/Craft.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Furness.css" rel="stylesheet">
@@ -22,8 +23,9 @@
     <link href="../Zeptrico/CSS/Mine_Button.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/Inventory.css" rel="stylesheet">
     <link href="../Zeptrico/CSS/XP_Bar.css" rel="stylesheet">
-    <link href="../Zeptrico/CSS/Market.css" rel="stylesheet" >
-    <link href="../Zeptrico/CSS/Top_Corner.css" rel="stylesheet" >
+    <link href="../Zeptrico/CSS/Market.css" rel="stylesheet">
+    <link href="../Zeptrico/CSS/Top_Corner.css" rel="stylesheet">
+    <link href="../Zeptrico/CSS/Ship.css" rel="stylesheet">
 
     <body onload="startTime()"></body>
 </head>
@@ -148,22 +150,88 @@
 
     <div class="Craft_Gui">
         <button id="Close_Craft_Button" onclick="Clean_Craft_Gui()">Close</button>
+
         <div class="Craft_Mud_Gui">
+            <div class="Cover_Up_GUI_Mud">
+                <p id="Cover_Mud_Locked">Locked</p>
+                <p id="Cober_Mud_Level">Level Needed 2</p>
+                <div class="Cover_Mud_Craft_Card">
+                    <img id="Cover_Mud_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                    <p id="Cover_Mud_Craft_Card_needed">5</p>
+                    
+                    <button id="Unlock_Mud_Button">Unlock</button>
+                </div>
+            </div>
             <img id="Craft_Mud_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
             <p id="Craft_Mud_Name">Mud</p>
-            <p id="Craft_Mud_Need">You need 2 dirt</p>
+            <div class="Craft_Mud_Over_Class">
+                <div class="Craft_Mud_IMG_GUi">
+                    <img id="Craft_Mud_Need_IMG" src="../Zeptrico/Mining_Images/Dirt.png" alt="">
+                </div>
+                <p id="Craft_Mud_Need">2 dirt</p>
+            </div>
             <button id="Craft_Mud_Button" onclick="craft_Mud()">Craft</button>
         </div>
+
         <div class="Craft_Bronze_Gui">
             <img id="Craft_Bronze_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
             <p id="Craft_Bronze_Name">Bronze</p>
-            <p id="Craft_Bronze_Need">You need 1 Tin and 1 Cobber</p>
+            <div class="Craft_Bronze_Over_Class1">
+                <div class="Craft_Bronze_IMG_Gui1">
+                    <img id="Craft_Bronze_Need_IMG1" src="../Zeptrico/Mining_Images/Cobber_Ore.png" alt="">
+                </div>
+                <p id="Craft_Bronze_Need1">1 Cobber</p>
+            </div>
+            <div class="Craft_Bronze_Over_Class2">
+                <div class="Craft_Bronze_IMG_Gui2">
+                    <img id="Craft_Bronze_Need_IMG2" src="../Zeptrico/Mining_Images/Tin_Ore.png" alt="">
+                </div>
+                <p id="Craft_Bronze_Need2">1 Tin</p>
+            </div>
+            
             <button id="Craft_Bronze_Button" onclick="craft_Broze()">Craft</button>
         </div>
+
+        <div class="Craft_Needles_Gui">
+            <img id="Craft_Needles_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p id="Craft_Needles_Name">Bronze Needels</p>
+            <div class="Craft_Needles_Over_Class">
+                <div class="Craft_Needles_IMG_Gui">
+                    <img id="Craft_Needles_Need_IMG" src="../Zeptrico/Mining_Images/Dirt_Locked.png" alt="">
+                </div>
+                <p id="Craft_Needles_Need">1 Bronze</p>
+            </div>
+            <button id="Craft_Needle_Button" onclick="Craft_Needls()">Craft</button>
+        </div>
+
+        <div class="Craft_Boltes_Gui">
+            <img id="Craft_Boltes_IMG" src="../Zeptrico/Mining_Images/Coal_Locked.png" alt="">
+            <p id="Craft_Boltes_Name">Boltes</p>
+            <div class="Craft_Bolts_Over_Class">
+                <div class="Craft_Bolts_IMG_Gui">
+                    <img id="Craft_Boltes_Need_IMG" src="../Zeptrico/Mining_Images/Diamond_Ore_Locked.png" alt="">
+                </div>
+                <p id="Craft_Boltes_Need">1 Bronze</p>
+            </div>
+            <button id="Craft_Boltes_Button" onclick="Craft_Bolts()">Craft</button>
+        </div>
+
+        <div class="Craft_Iron_Plate_Gui">
+            <img id="Craft_Iron_Plate_IMG" src="../Zeptrico/Mining_Images/Coal.png" alt="">
+            <p id="Craft_Iron_Plate_Name">Iron Plate</p>
+            <div class="Craft_Iron_Plate_Over_Class">
+                <div class="Craft_Iron_Plate_IMG_Gui">
+                    <img id="Craft_Iron_Plate_Need_IMG" src="../Zeptrico/Mining_Images/Coal.png" alt="">
+                </div>
+                <p id="Craft_Iron_Plate_Need">1 Iron</p>
+            </div>
+            <button id="Craft_Iron_Plate_Button" onclick="Craft_Iron_Plate()">Craft</button>
+        </div>
         
+
     </div>
 
-    <button id="furness_Open_Button" onclick="Furness_Open_Function()">Furness</button>
+    <button id="furness_Open_Button" onclick="Furness_Open_Function()"><img src="../Zeptrico/MainScreen_IMG/Furness.png" alt=""></button>
 
     <div class="melting_Ores">
         <button id="Close_Furness_Butto" onclick="Furness_Open_Function()">Close</button>
@@ -256,6 +324,61 @@
                 </div>
                 <div class="Stone_Sell_All_Class">
                     <p id="Stone_Sell_Price_All">0$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="Upgrade_Ship_Button" onclick="Open_Ship()">Ship</button>
+    <button id="Close_Ship_Button" onclick="Close_Ship()">Close</button>
+
+    <div class="Upgrade_Ship_Gui">
+        <div class="Ship_IMG_Gui">
+            <div class="Ship_Top_Gui">
+                <p id="Ship_Level">Level 0</p>
+                <p id="Ship_Level_Up">0/7</p>
+            </div>
+
+        </div>
+        <div class="Upgrade_Need_Gui_Box">
+            <div class="Upgread_Need_Upper_Box">
+                <p id="Upgread_Ship_Needs_Upper_Text">Needs</p>
+            </div>
+            <div class="Upgread_Need_Over_Gui">
+                <p id="Upgrade_Ship_Need_Text1">Test</p>
+                <div class="upgrade_Need1">
+                    <img id="Upgread_Need1_IMG" src="" alt="">
+                    <div class="Upgrade_Number_Gui1">
+                        <p id="Upgread_Need1_Number">10</p>
+                    </div>
+                </div>
+                <p id="Upgrade_Ship_Need_Text2">Test</p>
+                <div class="upgrade_Need2">
+                    <img id="Upgread_Need2_IMG" src="" alt="">
+                    <div class="Upgread_Number_Gui2">
+                        <p id="Upgread_Need2_Number">10</p>
+                    </div>
+                </div>
+                <p id="Upgrade_Ship_Need_Text3">Test</p>
+                <div class="upgrade_Need3">
+                    <img id="Upgread_Need3_IMG" src="" alt="">
+                    <div class="Upgread_Number_Gui3">
+                        <p id="Upgread_Need3_Number">10</p>
+                    </div>
+                </div>
+                <p id="Upgrade_Ship_Need_Text4">Test</p>
+                <div class="upgrade_Need4">
+                    <img id="Upgread_Need4_IMG" src="" alt="">
+                    <div class="Upgread_Number_Gui4">
+                        <p id="Upgread_Need4_Number">10</p>
+                    </div>
+                </div>
+                <p id="Upgrade_Ship_Need_Text5">Test</p>
+                <div class="upgrade_Need5">
+                    <img id="Upgread_Need5_IMG" src="" alt="">
+                    <div class="Upgread_Number_Gui5">
+                        <p id="Upgread_Need5_Number">10</p>
+                    </div>
                 </div>
             </div>
         </div>

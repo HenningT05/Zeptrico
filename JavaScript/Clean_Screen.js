@@ -19,6 +19,7 @@ function Print_Main_Screen(){
     document.getElementById("crafting_Button").style.visibility="visible"; 
     document.getElementById("furness_Open_Button").style.visibility="visible";
     document.getElementById("Market_Open_Button").style.visibility="visible"; 
+    document.getElementById("Upgrade_Ship_Button").style.visibility="visible"; 
 
     document.getElementById("Xp_Count").style.visibility="visible"; 
     document.getElementsByClassName("Xp_BackBar")[0].style.visibility="visible"; 
@@ -46,6 +47,7 @@ function Clean_Main_Screen(){
     document.getElementById("furness_Open_Button").style.visibility="Hidden"; 
     document.getElementById("Inventory_Button").style.visibility="Hidden"; 
     document.getElementById("Market_Open_Button").style.visibility="Hidden"; 
+    document.getElementById("Upgrade_Ship_Button").style.visibility="Hidden"; 
 
     document.getElementById("Xp_Count").style.visibility="Hidden"; 
     document.getElementsByClassName("Xp_BackBar")[0].style.visibility="Hidden"; 

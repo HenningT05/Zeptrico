@@ -83,7 +83,7 @@ function Furness_Open_Function(){
 
         
         if (Inventory[3] > 0 ){
-            document.getElementById("melt_Cobber_Button").style.visibility="visible";     
+            document.getElementById("Melt_Cobber_Button").style.visibility="visible";     
             console.log(Inventory[3], "Cobber ore")  
         }
         if (Inventory[5] > 0){

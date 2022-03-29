@@ -1,0 +1,391 @@
+#Close_Ship_Button{
+    visibility: hidden;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+}
+
+.Upgrade_Ship_Gui{
+    visibility: hidden;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Ship_IMG_Gui{
+    position: relative;
+    top: -50px;
+    left: 3%;
+
+    width: 90%;
+    height: 50%;
+
+    background-color: white;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Ship_Top_Gui{
+    position: relative;
+    left: 12.5%;
+    top: 3%;
+
+    width: 75%;
+    height: 20%;
+
+    background-color: black;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Ship_Level{
+    position: relative;
+    top: -25%;
+    text-align: center;
+
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+#Ship_Level_Up{
+    position: relative;
+    top: -35%;
+    text-align: center;
+
+    font-size: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.Upgrade_Need_Gui_Box{
+    position: relative;
+    top: -50px;
+    left: 5%;
+
+    width: 85%;
+    height: 40%;
+    background-color: bisque;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Upgread_Need_Upper_Box{
+    position: relative;
+    width: 40%;
+    top: 0%;
+    left: 30%;
+
+    background-color: white;
+
+    border-radius: 4px;
+}
+
+#Upgread_Ship_Needs_Upper_Text{
+    position: relative;
+    text-align: center;
+
+    color: black;
+}
+
+.Upgread_Need_Over_Gui{
+    position: relative;
+    left: 2%;
+    top: 0%;
+    width: 95%;
+    height: 60%;
+
+    background-color: brown;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Upgrade_Ship_Need_Text1{
+    position: absolute;
+    top: -7%;
+    left: 5%;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.upgrade_Need1{
+    position: absolute;
+
+    left: 1%;
+    top: 15%;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Upgrade_Number_Gui1{
+    position: absolute;
+    top: 115%;
+    left: 20%;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: white;
+
+    border-radius: 6px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Upgread_Need1_Number{
+    position: relative;
+    top: -55%;
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Upgrade_Ship_Need_Text2{
+    position: absolute;
+    top: -7%;
+    left: 24%;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.upgrade_Need2{
+    position: absolute;
+
+    left: 20%;
+    top: 15%;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Upgread_Number_Gui2{
+    position: absolute;
+    top: 115%;
+    left: 20%;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: white;
+
+    border-radius: 6px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Upgread_Need2_Number{
+    position: relative;
+    top: -55%;
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Upgrade_Ship_Need_Text3{
+    position: absolute;
+    top: -7%;
+    left: 44%;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+
+.upgrade_Need3{
+    position: absolute;
+
+    left: 40%;
+    top: 15%;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Upgread_Number_Gui3{
+    position: absolute;
+    top: 115%;
+    left: 20%;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: white;
+
+    border-radius: 6px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Upgread_Need3_Number{
+    position: relative;
+    top: -55%;
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Upgrade_Ship_Need_Text4{
+    position: absolute;
+    top: -7%;
+    left: 64%;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.upgrade_Need4{
+    position: absolute;
+
+    left: 60%;
+    top: 15%;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Upgread_Number_Gui4{
+    position: absolute;
+    top: 115%;
+    left: 20%;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: white;
+
+    border-radius: 6px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Upgread_Need4_Number{
+    position: relative;
+    top: -55%;
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Upgrade_Ship_Need_Text5{
+    position: absolute;
+    top: -7%;
+    left: 85%;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+
+.upgrade_Need5{
+    position: absolute;
+
+    left: 81%;
+    top: 15%;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+
+.Upgread_Number_Gui5{
+    position: absolute;
+    top: 115%;
+    left: 20%;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: white;
+
+    border-radius: 6px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Upgread_Need5_Number{
+    position: relative;
+    top: -55%;
+    text-align: center;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -23,7 +23,7 @@
     width: 150px;
     height: 250px;
 
-    background-color: #C89D7C;
+    background-color: #795644;
     
     border-radius: 8px;
     border-style: groove;
@@ -32,11 +32,125 @@
     border-width: 2px;
 }
 
+.Cover_Up_GUI_Mud{
+    visibility: visible;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+#Cover_Mud_Locked{
+    position: relative;
+    text-align: center;
+
+    top: 20%;
+    left: 5%;
+
+    width: 90%;
+    height: 10%;
+
+    color: white;
+
+    background-color: #c38452;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 1px;
+}
+
+#Cober_Mud_Level{
+    position: relative;
+    text-align: center;
+
+    top: 20%;
+    left: 5%;
+
+    width: 90%;
+    height: 10%;
+
+    color: white;
+
+    background-color: #c38452;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 1px;
+}
+
+.Cover_Mud_Craft_Card{
+    position: relative;
+    left: 5%;
+    top: 20%;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: #c38452;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 1px;
+}
+
+#Cover_Mud_Craft_Card_IMG{
+    position: relative;
+    transform: scale(0.8);
+    top:-6px;
+    left: 7%;
+}
+
+#Cover_Mud_Craft_Card_needed{
+    position: relative;
+    left: 50%;
+    top: -205%;
+
+    color: white;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Unlock_Mud_Button{
+    position: relative;
+    top: -220%;
+    left: 0%;
+
+    width:100%;
+    height: 80%;
+
+    background-color: #c38452;
+    color: white;
+
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 1px;
+}
 
 
 #Craft_Mud_IMG{
-    visibility: hidden;
-
     position: absolute;
     left: -17%;
     top: -30px;
@@ -45,14 +159,12 @@
 }
 
 #Craft_Mud_Name{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
     height: auto;
 
-    background-color: wheat;
+    background-color: #c39b77;
 
     border-style: groove;
     border-color: black;
@@ -63,35 +175,58 @@
     text-align: center;
 }
 
-#Craft_Mud_Need{
-    visibility: hidden;
-
-    position: relative;
-
-    width: auto;
-    height: auto;
-
-    background-color: wheat;
+.Craft_Mud_Over_Class{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
 
     border-style: groove;
     border-color: black;
     border-width: 1px;
     border-radius: 6px;
+}
 
-    top: 110px;
+.Craft_Mud_IMG_GUi{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Mud_Need_IMG{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Mud_Need{
+    position: relative;
+
+    top: -35px;
     text-align: center;
 }
 
 #Craft_Mud_Button{
-    visibility: hidden;
-
-    position: relative;
+    position: absolute;
     left: 30%;
 
     width: auto;
     height: auto;
 
-    background-color: wheat;
+    background-color: #c38452;
     font-size: 17px;
 
     border-style: groove;
@@ -99,7 +234,7 @@
     border-width: 1px;
     border-radius: 6px;
 
-    top: 110px;
+    top: 85%;
     text-align: center;
 }
 
@@ -115,7 +250,7 @@
     width: 150px;
     height: 250px;
 
-    background-color: #C89D7C;
+    background-color: #795644;
     
     border-radius: 8px;
     border-style: groove;
@@ -124,25 +259,13 @@
     border-width: 2px;
 }
 
-#Craft_Bronze_IMG{
-    visibility: hidden;
-
-    position: absolute;
-    left: -17%;
-    top: -30px;
-
-    transform: scale(0.85);
-}
-
 #Craft_Bronze_Name{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
     height: auto;
 
-    background-color: wheat;
+    background-color: #c39b77;
 
     border-style: groove;
     border-color: black;
@@ -153,35 +276,111 @@
     text-align: center;
 }
 
-#Craft_Bronze_Need{
-    visibility: hidden;
+#Craft_Bronze_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
 
-    position: relative;
+    transform: scale(0.85);
+}
 
-    width: auto;
-    height: auto;
-
-    background-color: wheat;
+.Craft_Bronze_Over_Class1{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
 
     border-style: groove;
     border-color: black;
     border-width: 1px;
     border-radius: 6px;
+}
 
-    top: 110px;
+.Craft_Bronze_IMG_Gui1{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Bronze_Need_IMG1{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Bronze_Need1{
+    position: relative;
+
+    top: -35px;
     text-align: center;
 }
 
-#Craft_Bronze_Button{
-    visibility: hidden;
+
+.Craft_Bronze_Over_Class2{
+    position: absolute;
+    top: 78%;
     
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Bronze_IMG_Gui2{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Bronze_Need_IMG2{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Bronze_Need2{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Bronze_Button{   
     position: relative;
     left: 30%;
 
     width: auto;
     height: auto;
 
-    background-color: wheat;
+    background-color: #c38452;
     font-size: 17px;
 
     border-style: groove;
@@ -189,6 +388,344 @@
     border-width: 1px;
     border-radius: 6px;
 
-    top: 110px;
+    top: 70%;
     text-align: center;
 }
+
+
+
+
+
+.Craft_Needles_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 20px;
+    top: 330px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Craft_Needles_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+#Craft_Needles_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+.Craft_Needles_Over_Class{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Needles_IMG_Gui{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Needles_Need_IMG{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Needles_Need{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Needle_Button{
+    position: absolute;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 85%;
+    text-align: center;
+}
+
+
+
+
+
+.Craft_Boltes_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 54%;
+    top: 330px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Craft_Boltes_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+#Craft_Boltes_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+.Craft_Bolts_Over_Class{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Bolts_IMG_Gui{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Boltes_Need_IMG{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Boltes_Need{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Boltes_Button{
+    position: absolute;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 85%;
+    text-align: center;
+}
+
+
+
+
+.Craft_Iron_Plate_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 20px;
+    top: 610px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+
+
+#Craft_Iron_Plate_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+#Craft_Iron_Plate_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+.Craft_Iron_Plate_Over_Class{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Iron_Plate_IMG_Gui{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Iron_Plate_Need_IMG{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Iron_Plate_Need{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Iron_Plate_Button{
+    position: absolute;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 85%;
+    text-align: center;
+}
+

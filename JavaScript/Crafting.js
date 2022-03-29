@@ -1,49 +1,41 @@
+var Needls_Resorses = "Bronze"
+var Bolts_Resores = "Bronze"
 
 function go_To_Crafting_Page(){
     document.getElementsByClassName("Craft_Mud_Gui")[0].style.visibility="visible"; 
     document.getElementsByClassName("Craft_Bronze_Gui")[0].style.visibility="visible"; 
-    document.getElementById("Craft_Mud_IMG").style.visibility="visible";
-    document.getElementById("Craft_Mud_Name").style.visibility="visible";
-    document.getElementById("Craft_Mud_Need").style.visibility="visible";
-    document.getElementById("Craft_Mud_Button").style.visibility="visible";
-
-    document.getElementById("Craft_Bronze_IMG").style.visibility="visible";
-    document.getElementById("Craft_Bronze_Name").style.visibility="visible";
-    document.getElementById("Craft_Bronze_Need").style.visibility="visible";
-    document.getElementById("Craft_Bronze_Button").style.visibility="visible";
+    document.getElementsByClassName("Craft_Needles_Gui")[0].style.visibility="visible"; 
+    document.getElementsByClassName("Craft_Boltes_Gui")[0].style.visibility="visible"; 
+    document.getElementsByClassName("Craft_Iron_Plate_Gui")[0].style.visibility="visible";
 
     document.getElementById("Close_Craft_Button").style.visibility="visible";
     Clean_Main_Screen()
 }
 
 function Clean_Craft_Gui(){
-    console.log("good")
     document.getElementsByClassName("Craft_Mud_Gui")[0].style.visibility="hidden"; 
-    document.getElementsByClassName("Craft_Bronze_Gui")[0].style.visibility="hidden"; 
-    document.getElementById("Craft_Mud_IMG").style.visibility="hidden";
-    document.getElementById("Craft_Mud_Name").style.visibility="hidden";
-    document.getElementById("Craft_Mud_Need").style.visibility="hidden";
-    document.getElementById("Craft_Mud_Button").style.visibility="hidden";
-
-    document.getElementById("Craft_Bronze_IMG").style.visibility="hidden";
-    document.getElementById("Craft_Bronze_Name").style.visibility="hidden";
-    document.getElementById("Craft_Bronze_Need").style.visibility="hidden";
-    document.getElementById("Craft_Bronze_Button").style.visibility="hidden";
+    document.getElementsByClassName("Craft_Bronze_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Needles_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Boltes_Gui")[0].style.visibility="hidden";  
+    document.getElementsByClassName("Craft_Iron_Plate_Gui")[0].style.visibility="hidden";
 
     document.getElementById("Close_Craft_Button").style.visibility="hidden";
     Print_Main_Screen()
+}
+
+function Upgrade_Craft_Data(){
+    
+    Xp_Level_Check()
 }
 
 function craft_Mud(){
     if (Inventory[0] >= 2){
         Inventory[0] -= 2
         Craft_Inventory[0] += 1
-        document.getElementById('number_Of_Dirt').innerHTML = `Dirt: ${Inventory[0]}`;
-        document.getElementById('number_Of_Mud').innerHTML = `Mud: ${Craft_Inventory[0]}`;
 
         xp_Incressment = 30
         xp = xp_Incressment
-        Xp_Level_Check()
+        Upgrade_Craft_Data()
     }
     else{
         console.log("big fack up")
@@ -55,15 +47,84 @@ function craft_Broze(){
         Melt_Inventory[0] -= 1
         Melt_Inventory[1] -= 1
         Craft_Inventory[1] += 1
-        document.getElementById('number_Of_Cobber').innerHTML = `Cobber: ${Melt_Inventory[0]}`;
-        document.getElementById('number_Of_Tin').innerHTML = `Tin: ${Melt_Inventory[1]}`;
-        document.getElementById('number_Of_Bronze').innerHTML = `Broze: ${Craft_Inventory[1]}`;
 
         xp_Incressment = 30
         xp = xp_Incressment
-        Xp_Level_Check()
+        Upgrade_Craft_Data()
     }
     else{
         console.log("big fack up")
+    }
+}
+
+function Craft_Needls(){
+    if (Needls_Resorses == "Bronze"){
+        if (Craft_Inventory[1] >=1){
+            Craft_Inventory[1] -= 1
+            Craft_Inventory[2] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("Big fack up")
+        }
+    }
+    if (Needls_Resorses == "Iron"){
+        if (Melt_Inventory[2] >= 1){
+            Melt_Inventory[2] -= 1
+            Craft_Inventory[3] += 1
+            
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("Big fack up")
+        }
+    }
+}
+
+function Craft_Bolts(){
+    if (Bolts_Resores == "Bronze"){
+        if (Craft_Inventory[1] >= 1){
+            Craft_Inventory[1] -= 1
+            Craft_Inventory[4] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("Big fack up")
+        }
+    }
+    if (Bolts_Resores == "Iron"){
+        if (Melt_Inventory[2] >= 1){
+            Melt_Inventory[2] -= 1
+            Craft_Inventory[5] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("Big fack up")
+        }
+    }
+}
+
+function Craft_Iron_Plate(){
+    if (Melt_Inventory[2] >= 2){
+        Melt_Inventory[2] -= 2
+        Craft_Inventory[6] += 1
+
+        xp_Incressment = 30
+        xp = xp_Incressment
+        Upgrade_Craft_Data()
+    }
+    else{
+        console.log("Big fack up")
     }
 }
