@@ -8,7 +8,7 @@ var Coin_Get_LevelUp = 30
 var Coin_Increes = 15
 
 var Craft_Card_Get_LevelUp = 5
-var Craft_Card_Increes = 2
+var Craft_Card_Increes = 1
 
 function Hide_Level_Up_Screen(){
     document.getElementById("Start_Mine_Button").style.visibility="visible"; 
@@ -68,7 +68,8 @@ async function Xp_Level_Check(){
             x = 100
         }
     }
-    
+
+    xp = 0
     
     if (xp_Prosent_Andel >= 100){
         Level += 1

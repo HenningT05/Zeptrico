@@ -149,17 +149,17 @@
     <button id="crafting_Button" onclick="go_To_Crafting_Page()"><img src="../Zeptrico/MainScreen_IMG/Craft.png" alt=""></button>
 
     <div class="Craft_Gui">
-        <button id="Close_Craft_Button" onclick="Clean_Craft_Gui()">Close</button>
+        <button id="Close_Craft_Button" onclick="Clean_Craft_Gui_Step1()">Close</button>
 
         <div class="Craft_Mud_Gui">
             <div class="Cover_Up_GUI_Mud">
-                <p id="Cover_Mud_Locked">Locked</p>
-                <p id="Cober_Mud_Level">Level Needed 2</p>
-                <div class="Cover_Mud_Craft_Card">
-                    <img id="Cover_Mud_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
-                    <p id="Cover_Mud_Craft_Card_needed">5</p>
+                <p id="Cover_Locked">Locked</p>
+                <p id="Cover_Level">Level Needed 2</p>
+                <div class="Cover_Craft_Card">
+                    <img id="Cover_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                    <p id="Cover_Craft_Card_needed">5</p>
                     
-                    <button id="Unlock_Mud_Button">Unlock</button>
+                    <button id="Unlock_Button" onclick="Unlock_Mud()">Unlock</button>
                 </div>
             </div>
             <img id="Craft_Mud_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
@@ -174,6 +174,16 @@
         </div>
 
         <div class="Craft_Bronze_Gui">
+            <divx| class="Cover_Up_GUI_Bronze">
+                <p id="Cover_Locked">Locked</p>
+                <p id="Cover_Level">Level Needed 4</p>
+                <div class="Cover_Craft_Card">
+                    <img id="Cover_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                    <p id="Cover_Craft_Card_needed">10</p>
+                    
+                    <button id="Unlock_Button" onclick="Unlock_Bronze()">Unlock</button>
+                </div>
+            </divx|>
             <img id="Craft_Bronze_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
             <p id="Craft_Bronze_Name">Bronze</p>
             <div class="Craft_Bronze_Over_Class1">
@@ -192,19 +202,41 @@
             <button id="Craft_Bronze_Button" onclick="craft_Broze()">Craft</button>
         </div>
 
-        <div class="Craft_Needles_Gui">
-            <img id="Craft_Needles_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
-            <p id="Craft_Needles_Name">Bronze Needels</p>
-            <div class="Craft_Needles_Over_Class">
-                <div class="Craft_Needles_IMG_Gui">
-                    <img id="Craft_Needles_Need_IMG" src="../Zeptrico/Mining_Images/Dirt_Locked.png" alt="">
+        <div class="Craft_Nails_Gui">
+            <div class="Cover_Up_GUI_Nails">
+                <p id="Cover_Locked">Locked</p>
+                <p id="Cover_Level">Level Needed 8</p>
+                <div class="Cover_Craft_Card">
+                    <img id="Cover_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                    <p id="Cover_Craft_Card_needed">15</p>
+                    
+                    <button id="Unlock_Button" onclick="Unlock_Nails()">Unlock</button>
                 </div>
-                <p id="Craft_Needles_Need">1 Bronze</p>
             </div>
-            <button id="Craft_Needle_Button" onclick="Craft_Needls()">Craft</button>
+            <img id="Craft_Nails_IMG" src="../Zeptrico/Mining_Images/Iron_Ore_Locked.png" alt="">
+            <p id="Craft_Nails_Name">Bronze Nails</p>
+            <div class="Craft_Nails_Over_Class">
+                <div class="Craft_Nails_IMG_Gui">
+                    <img id="Craft_Nails_Need_IMG" src="../Zeptrico/Mining_Images/Dirt_Locked.png" alt="">
+                </div>
+                <p id="Craft_Nails_Need">1 Bronze</p>
+            </div>
+            <button id="Craft_Needle_Button" onclick="Craft_Nails()">Craft</button>
+            <button id="Craft_Nail_Change_M_Button" onclick="Nail_Change_M()">Change</button>
         </div>
 
+
         <div class="Craft_Boltes_Gui">
+            <div class="Cover_Up_GUI_Boltes">
+                <p id="Cover_Locked">Locked</p>
+                <p id="Cover_Level">Level Needed 8</p>
+                <div class="Cover_Craft_Card">
+                    <img id="Cover_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                    <p id="Cover_Craft_Card_needed">15</p>
+                    
+                    <button id="Unlock_Button" onclick="Unlock_Boltes()">Unlock</button>
+                </div>
+            </div>
             <img id="Craft_Boltes_IMG" src="../Zeptrico/Mining_Images/Coal_Locked.png" alt="">
             <p id="Craft_Boltes_Name">Boltes</p>
             <div class="Craft_Bolts_Over_Class">
@@ -214,9 +246,20 @@
                 <p id="Craft_Boltes_Need">1 Bronze</p>
             </div>
             <button id="Craft_Boltes_Button" onclick="Craft_Bolts()">Craft</button>
+            <button id="Craft_Bolt_Change_M_Button" onclick="Bolt_Change_M()">Change</button>
         </div>
 
         <div class="Craft_Iron_Plate_Gui">
+            <div class="Cover_Up_GUI_Iron_Plate">
+                <p id="Cover_Locked">Locked</p>
+                <p id="Cover_Level">Level Needed 10</p>
+                <div class="Cover_Craft_Card">
+                    <img id="Cover_Craft_Card_IMG" src="../Zeptrico/MainScreen_IMG/Craft_Card.png" alt="">
+                    <p id="Cover_Craft_Card_needed">20</p>
+                    
+                    <button id="Unlock_Button" onclick="Unlock_Iron_Plate()">Unlock</button>
+                </div>
+            </div>
             <img id="Craft_Iron_Plate_IMG" src="../Zeptrico/Mining_Images/Coal.png" alt="">
             <p id="Craft_Iron_Plate_Name">Iron Plate</p>
             <div class="Craft_Iron_Plate_Over_Class">

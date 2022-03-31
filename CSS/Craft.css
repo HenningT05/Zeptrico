@@ -33,7 +33,7 @@
 }
 
 .Cover_Up_GUI_Mud{
-    visibility: visible;
+    visibility: hidden;
 
     position:absolute;
 
@@ -52,7 +52,7 @@
     z-index: 2;
 }
 
-#Cover_Mud_Locked{
+#Cover_Locked{
     position: relative;
     text-align: center;
 
@@ -73,7 +73,7 @@
     border-width: 1px;
 }
 
-#Cober_Mud_Level{
+#Cover_Level{
     position: relative;
     text-align: center;
 
@@ -94,7 +94,7 @@
     border-width: 1px;
 }
 
-.Cover_Mud_Craft_Card{
+.Cover_Craft_Card{
     position: relative;
     left: 5%;
     top: 20%;
@@ -111,14 +111,14 @@
     border-width: 1px;
 }
 
-#Cover_Mud_Craft_Card_IMG{
+#Cover_Craft_Card_IMG{
     position: relative;
     transform: scale(0.8);
     top:-6px;
     left: 7%;
 }
 
-#Cover_Mud_Craft_Card_needed{
+#Cover_Craft_Card_needed{
     position: relative;
     left: 50%;
     top: -205%;
@@ -128,7 +128,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#Unlock_Mud_Button{
+#Unlock_Button{
     position: relative;
     top: -220%;
     left: 0%;
@@ -257,6 +257,26 @@
     border-color: black;
 
     border-width: 2px;
+}
+
+.Cover_Up_GUI_Bronze{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
 }
 
 #Craft_Bronze_Name{
@@ -396,7 +416,7 @@
 
 
 
-.Craft_Needles_Gui{
+.Craft_Nails_Gui{
     visibility: hidden;
 
     position: absolute;
@@ -416,7 +436,28 @@
     border-width: 2px;
 }
 
-#Craft_Needles_IMG{
+.Cover_Up_GUI_Nails{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Nails_IMG{
     position: absolute;
     left: -17%;
     top: -30px;
@@ -424,7 +465,7 @@
     transform: scale(0.85);
 }
 
-#Craft_Needles_Name{
+#Craft_Nails_Name{
     position: relative;
 
     width: auto;
@@ -441,7 +482,7 @@
     text-align: center;
 }
 
-.Craft_Needles_Over_Class{
+.Craft_Nails_Over_Class{
     position: absolute;
     top: 67%;
     
@@ -455,7 +496,7 @@
     border-radius: 6px;
 }
 
-.Craft_Needles_IMG_Gui{
+.Craft_Nails_IMG_Gui{
     position: relative;
     left: 5%;
 
@@ -470,7 +511,7 @@
     border-radius: 6px;
 }
 
-#Craft_Needles_Need_IMG{
+#Craft_Nails_Need_IMG{
     position: relative;
     top: -87px;
     left: -85px;
@@ -478,7 +519,7 @@
     transform: scale(0.20);
 }
 
-#Craft_Needles_Need{
+#Craft_Nails_Need{
     position: relative;
 
     top: -35px;
@@ -504,7 +545,11 @@
     text-align: center;
 }
 
+#Craft_Nail_Change_M_Button{
+    position: absolute;
 
+    top: 90%;
+}
 
 
 
@@ -526,6 +571,26 @@
     border-color: black;
 
     border-width: 2px;
+}
+
+.Cover_Up_GUI_Boltes{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
 }
 
 #Craft_Boltes_IMG{
@@ -616,7 +681,11 @@
     text-align: center;
 }
 
+#Craft_Bolt_Change_M_Button{
+    position: absolute;
 
+    top: 90%;
+}
 
 
 .Craft_Iron_Plate_Gui{
@@ -639,6 +708,25 @@
     border-width: 2px;
 }
 
+.Cover_Up_GUI_Iron_Plate{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
 
 
 #Craft_Iron_Plate_IMG{
