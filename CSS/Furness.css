@@ -21,7 +21,7 @@
     visibility: hidden;
 }
 
-.Melt_Cobber_Gui{
+.Melt_Gui{
     position: absolute;
     visibility: hidden;
 
@@ -39,7 +39,7 @@
     border-width: 2px;
 }
 
-.Melt_Cobber_Ore_IMG_Gui{
+.Melt_Ore_IMG_Gui{
     position: relative;
     left: 5%;
     top: 5px;
@@ -57,7 +57,7 @@
     border-width: 1px;
 }
 
-#Melt_Cobber_ore_Gui{
+#Melt_ore_Gui{
     position: relative;
     top: -78px;
     left: -80px;
@@ -65,7 +65,7 @@
     transform: scale(0.23);
 }
 
-.Melt_Cobber_Over_Gui{
+.Melt_Over_Gui{
     position: relative;
     top: -244px;
     left: -15px;
@@ -82,7 +82,7 @@
     border-width: 2px;
 }
 
-#Melt_Cobber_Name{
+#Melt_Name{
     position: relative;
     top: -7px;
     text-align: center;
@@ -92,10 +92,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     color: white;
-
 }
 
-.Melt_Cobber_Under_Gui{
+.Melt_Under_Gui{
     position: relative;
     top: -194px;
     left: -12px;
@@ -112,7 +111,7 @@
     border-width: 2px;
 }
 
-.Melt_Cobber_Number_Box{
+.Melt_Number_Box{
     position: relative;
     left: 10px;
     top: 3px;
@@ -128,7 +127,7 @@
     border-width: 1px;
 }
 
-#Melt_Cobber_Ore_Number{
+#Melt_Ore_Number{
     position: relative;
     top: -15px;
     left: 15px;
@@ -136,7 +135,7 @@
     color: white;
 }
 
-#Cobber_Ore_Pluss{
+#Ore_Pluss{
     position: relative;
     top: -37px;
     left: 19%;
@@ -144,7 +143,7 @@
     transform: scale(0.8);
 }
 
-.Melt_Cobber_Ore_Coal_IMG_Gui{
+.Melt_Ore_Coal_IMG_Gui{
     position: relative;
     top: -89px;
     left: 36%;
@@ -161,7 +160,7 @@
     border-width: 1px;
 }
 
-#Melt_Cobber_coal{
+#Melt_coal{
     position: relative;
     top: -80px;
     left: -80px;
@@ -169,7 +168,7 @@
     transform: scale(0.23);
 }
 
-.Melt_Cobber_Coal_Over_Gui{
+.Melt_Coal_Over_Gui{
     position: relative;
 
     top: -246px;
@@ -187,7 +186,7 @@
     border-width: 2px;
 }
 
-#Melt_Cobber_Coal_Name{
+#Melt_Coal_Name{
     position: relative;
     top: -15px;
     text-align: center;
@@ -199,7 +198,7 @@
     color: white;
 }
 
-.Melt_Cobber_Coal_Under_Gui{
+.Melt_Coal_Under_Gui{
     position: relative;
     top: -196px;
     left: -11px;
@@ -216,7 +215,7 @@
     border-width: 2px;
 }
 
-.Melt_Cobber_Coal_Number_Box{
+.Melt_Coal_Number_Box{
     position: relative;
     left: 10px;
     top: 3px;
@@ -233,7 +232,7 @@
     border-width: 1px;
 }
 
-#Melt_Cobber_Coal_Number{
+#Melt_Coal_Number{
     position: relative;
     top: -15px;
     left: 15px;
@@ -241,7 +240,7 @@
     color: white;
 }
 
-#Cobber_Ore_Arrow{
+#Ore_Arrow{
     position: relative;
     top: -133px;
     left: 50%;
@@ -249,7 +248,7 @@
     transform: scale(0.8);
 }
 
-.Melted_Cobber_Over_Gui{
+.Melted_Over_Gui{
     position: relative;
     top: -226px;
     left: 62%;
@@ -266,7 +265,7 @@
     border-width: 2px;
 }
 
-#Melted_Cobber_Name{
+#Melted_Name{
     position: relative;
     top: -10px;
     text-align: center;
@@ -276,7 +275,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.Melt_Cobber_IMG_Gui{
+.Melt_IMG_Gui{
     position: relative;
     top: -250px;
     left: 66.5%;
@@ -293,7 +292,7 @@
     border-width: 1px;
 }
 
-#Melt_Cobber_Button{
+#Melt_Button{
     position: relative;
     visibility: hidden;
 
@@ -311,4 +310,18 @@
     border-style: groove;
     border-color: black;
     border-width: 1px;
+}
+
+
+.Dif_Ore_Class{
+    visibility: hidden;
+
+    position:absolute;
+
+    top: 50%;
+
+    width: 90%;
+    height: 30%;
+
+    background-color: #a1785c;
 }

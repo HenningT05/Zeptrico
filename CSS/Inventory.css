@@ -1,4 +1,5 @@
 .Inventory{
+    visibility: hidden;
     position: absolute;
     top: 300px;
 }
@@ -167,7 +168,7 @@
 }
 
 
-.Inventory_Cobber_Ore{
+.Inventory_Copper_Ore{
     visibility: hidden;
 
     position: absolute;
@@ -186,14 +187,14 @@
 
     border-width: 2px;
 }
-#Cobber_Ore_Inventory_IMG{
+#Copper_Ore_Inventory_IMG{
     position: absolute;
     left: -50%;
     top: -50px;
 
     transform: scale(0.5);
 }
-#number_Of_Cobber_Ore{
+#number_Of_Copper_Ore{
     visibility: hidden;
 
     position: relative;
@@ -437,8 +438,7 @@
     text-align: center;
 }
 
-
-.Inventory_Cobber{
+.Inventory_Titanium_Ore{
     visibility: hidden;
 
     position: absolute;
@@ -457,14 +457,149 @@
 
     border-width: 2px;
 }
-#Cobber_Inventory_IMG{
+#Titanium_Ore_Inventory_IMG{
     position: absolute;
     left: -50%;
     top: -50px;
 
     transform: scale(0.5);
 }
-#number_Of_Cobber{
+#number_Of_Titanium_Ore{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Niter{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 310px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Niter_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Niter{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Electrum{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 310px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Electrum_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Electrum{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Copper{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 490px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Copper_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Copper{
     visibility: hidden;
 
     position: relative;
@@ -489,7 +624,7 @@
     position: absolute;
 
     left: 125px;
-    top: 310px;
+    top: 490px;
 
     width: 100px;
     height: 150px;
@@ -535,7 +670,7 @@
     position: absolute;
 
     left: 250px;
-    top: 310px;
+    top: 490px;
 
     width: 100px;
     height: 150px;
@@ -574,6 +709,141 @@
     text-align: center;
 }
 
+.Inventory_Silver{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 670px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Silver_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Silver{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Gold{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 670px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Gold_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Gold{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Titanium{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 670px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Titanium_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Titanium{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
 
 .Inventory_Mud{
     visibility: hidden;
@@ -581,7 +851,7 @@
     position: absolute;
 
     left: 4%;
-    top: 490px;
+    top: 850px;
 
     width: 100px;
     height: 150px;
@@ -627,7 +897,7 @@
     position: absolute;
 
     left: 125px;
-    top: 490px;
+    top: 850px;
 
     width: 100px;
     height: 150px;
@@ -648,6 +918,459 @@
     transform: scale(0.5);
 }
 #number_Of_Bronze{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Bronze_Nails{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 850px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Bronze_Nails_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Bronze_Nails{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Bronze_Boltes{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 1030px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Bronze_Boltes_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Bronze_Boltes{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Iron_Nails{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 1030px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Iron_Nails_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Iron_Nails{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Iron_Boltes{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 1030px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Iron_Boltes_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Iron_Boltes{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Copper_Plate{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 1210px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Copper_PLate_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Copper_Plate{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Iron_Plate{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 1210px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Iron_PLate_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Iron_Plate{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Copper_Iron_Alloys{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 1210px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Copper_Iron_Alloys_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Copper_Iron_Alloys{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Circuit_Board{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 4%;
+    top: 1390px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Circuit_Board_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Circuit_Board{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+.Inventory_Oxidizer{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 125px;
+    top: 1390px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Oxidizer_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Oxidizer{
+    visibility: hidden;
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 80px;
+    text-align: center;
+}
+
+
+.Inventory_Rocket_Fuel{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 250px;
+    top: 1390px;
+
+    width: 100px;
+    height: 150px;
+
+    background-color: #C89D7C;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+#Rocket_Fuel_Inventory_IMG{
+    position: absolute;
+    left: -50%;
+    top: -50px;
+
+    transform: scale(0.5);
+}
+#number_Of_Rocket_Fuel{
     visibility: hidden;
 
     position: relative;

@@ -61,12 +61,24 @@ function go_To_Crafting_Page(){
     document.getElementsByClassName("Craft_Nails_Gui")[0].style.visibility="visible"; 
     document.getElementsByClassName("Craft_Boltes_Gui")[0].style.visibility="visible"; 
     document.getElementsByClassName("Craft_Iron_Plate_Gui")[0].style.visibility="visible";
+    document.getElementsByClassName("Craft_Electrum_Gui")[0].style.visibility="visible";
+    document.getElementsByClassName("Craft_Illegal_Zeptiums_Gui")[0].style.visibility="visible";
+    document.getElementsByClassName("Craft_Copper_Iron_Alloys_Gui")[0].style.visibility="visible";
+    document.getElementsByClassName("Craft_Circuit_Board_Gui")[0].style.visibility="visible";
+    document.getElementsByClassName("Craft_Oxidizer_Gui")[0].style.visibility="visible";
+    document.getElementsByClassName("Craft_Rocket_Fuel_Gui")[0].style.visibility="visible";
 
     document.getElementsByClassName("Cover_Up_GUI_Mud")[0].style.visibility="visible";
     document.getElementsByClassName("Cover_Up_GUI_Bronze")[0].style.visibility="visible";
     document.getElementsByClassName("Cover_Up_GUI_Nails")[0].style.visibility="visible";
     document.getElementsByClassName("Cover_Up_GUI_Boltes")[0].style.visibility="visible";
     document.getElementsByClassName("Cover_Up_GUI_Iron_Plate")[0].style.visibility="visible";
+    document.getElementsByClassName("Cover_Up_GUI_Electrum")[0].style.visibility="visible";
+    document.getElementsByClassName("Cover_Up_GUI_Illegal_Zeptiums")[0].style.visibility="visible";
+    document.getElementsByClassName("Cover_Up_GUI_Copper_Iron_Alloys")[0].style.visibility="visible";
+    document.getElementsByClassName("Cover_Up_GUI_Circuit_Board")[0].style.visibility="visible";
+    document.getElementsByClassName("Cover_Up_GUI_Oxidizer")[0].style.visibility="visible";
+    document.getElementsByClassName("Cover_Up_GUI_Rocket_Fuel")[0].style.visibility="visible";
 
     document.getElementById("Close_Craft_Button").style.visibility="visible";
     Craft_Check_Unloked()
@@ -78,12 +90,24 @@ function Clean_Craft_Gui(){
     document.getElementsByClassName("Craft_Nails_Gui")[0].style.visibility="hidden";
     document.getElementsByClassName("Craft_Boltes_Gui")[0].style.visibility="hidden";  
     document.getElementsByClassName("Craft_Iron_Plate_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Electrum_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Illegal_Zeptiums_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Copper_Iron_Alloys_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Circuit_Board_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Oxidizer_Gui")[0].style.visibility="hidden";
+    document.getElementsByClassName("Craft_Rocket_Fuel_Gui")[0].style.visibility="hidden";
 
     document.getElementsByClassName("Cover_Up_GUI_Mud")[0].style.visibility="hidden";
     document.getElementsByClassName("Cover_Up_GUI_Bronze")[0].style.visibility="hidden";
     document.getElementsByClassName("Cover_Up_GUI_Nails")[0].style.visibility="hidden";
     document.getElementsByClassName("Cover_Up_GUI_Boltes")[0].style.visibility="hidden";
     document.getElementsByClassName("Cover_Up_GUI_Iron_Plate")[0].style.visibility="hidden";
+    document.getElementsByClassName("Cover_Up_GUI_Electrum")[0].style.visibility="hidden";
+    document.getElementsByClassName("Cover_Up_GUI_Illegal_Zeptiums")[0].style.visibility="hidden";
+    document.getElementsByClassName("Cover_Up_GUI_Copper_Iron_Alloys")[0].style.visibility="hidden";
+    document.getElementsByClassName("Cover_Up_GUI_Circuit_Board")[0].style.visibility="hidden";
+    document.getElementsByClassName("Cover_Up_GUI_Oxidizer")[0].style.visibility="hidden";
+    document.getElementsByClassName("Cover_Up_GUI_Rocket_Fuel")[0].style.visibility="hidden";
 
     document.getElementById("Close_Craft_Button").style.visibility="hidden";
     Print_Main_Screen()
@@ -255,6 +279,14 @@ function Craft_Bolts(){
         }
     }
 }
+
+//function Craft_Electrum{
+    if (Melt_Inventory[3] >= 1){
+        if (Melt_Inventory[4] >= 1){
+
+        }
+    }
+//}
 
 function Craft_Iron_Plate(){
     if (Melt_Inventory[2] >= 2){

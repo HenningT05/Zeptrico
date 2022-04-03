@@ -15,8 +15,8 @@ var Stone_Chance_Of_Getting_Buttom = -1
 var Coal_Chance_Of_Getting_Top = -1
 var Coal_Chance_Of_Getting_Buttom = -1
 
-var Cobber_Chance_Of_Getting_Top = -1
-var Cobber_Chance_Of_Getting_Buttom = -1
+var Copper_Chance_Of_Getting_Top = -1
+var Copper_Chance_Of_Getting_Buttom = -1
 
 var Tin_Chance_Of_Getting_Top = -1
 var Tin_Chance_Of_Getting_Buttom = -1
@@ -32,6 +32,12 @@ var Gold_Chance_Of_Getting_Buttom = -1
 
 var Diamond_Chance_Of_Getting_Top = -1
 var Diamond_Chance_Of_Getting_Buttom = -1
+
+var Titanium_Chance_Of_Getting_Top = -1
+var Titanium_Chance_Of_Getting_Buttom = -1
+
+var Niter_Chance_Of_Getting_Top = -1
+var Niter_Chance_Of_Getting_Buttom = -1
 
 function delay(n){
     return new Promise(function(resolve){
@@ -72,12 +78,12 @@ function pick_Mining_Object(){
         Inventory[2] += 2
         document.getElementById('number_Of_Coal').innerHTML = `Coal ${Inventory[2]}`;
     }
-    if (Cobber_Chance_Of_Getting_Buttom <= random_Mining_Object && Cobber_Chance_Of_Getting_Top >= random_Mining_Object){
-        document.getElementById('Object_Get_Text').innerHTML = "Cobber Ore";
-        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Cobber_Ore.png";
-        document.getElementById("Cobber_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Cobber_Ore.png";
+    if (Copper_Chance_Of_Getting_Buttom <= random_Mining_Object && Copper_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Object_Get_Text').innerHTML = "Copper Ore";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Copper_Ore.png";
+        document.getElementById("Copper_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Copper_Ore.png";
         Inventory[3] += 1
-        document.getElementById('number_Of_Cobber_Ore').innerHTML = `Cobber Ore ${Inventory[3]}`;
+        document.getElementById('number_Of_Copper_Ore').innerHTML = `Copper Ore ${Inventory[3]}`;
     }
     if (Tin_Chance_Of_Getting_Buttom <= random_Mining_Object && Tin_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Object_Get_Text').innerHTML = "Tin Ore";
@@ -115,6 +121,20 @@ function pick_Mining_Object(){
         Inventory[8] += 1
         document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
     }
+    if (Titanium_Chance_Of_Getting_Buttom <= random_Mining_Object && Titanium_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Object_Get_Text').innerHTML = "Titanium";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        document.getElementById("Diamond_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        Inventory[9] += 1
+        document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
+    }
+    if (Niter_Chance_Of_Getting_Buttom <= random_Mining_Object && Niter_Chance_Of_Getting_Top >= random_Mining_Object){
+        document.getElementById('Object_Get_Text').innerHTML = "Niter";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        document.getElementById("Diamond_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        Inventory[10] += 1
+        document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
+    }
     Xp_Level_Check()
 }
 
@@ -140,55 +160,64 @@ function check_Meters(){
         Coal_Chance_Of_Getting_Top = 90
         Coal_Chance_Of_Getting_Buttom = 70
 
-        Cobber_Chance_Of_Getting_Top = 100
-        Cobber_Chance_Of_Getting_Buttom = 90
+        Copper_Chance_Of_Getting_Top = 100
+        Copper_Chance_Of_Getting_Buttom = 90
     }
     if (meters_Down >= 20 ){
         Dirt_Chance_Of_Getting_Top = -1
         Dirt_Chance_Of_Getting_Buttom = -1
 
         Stone_Chance_Of_Getting_Top = 50
-        Stone_Chance_Of_Getting_Buttom = 0
+        Stone_Chance_Of_Getting_Buttom = 12
 
         Coal_Chance_Of_Getting_Top = 70
         Coal_Chance_Of_Getting_Buttom = 50
 
-        Cobber_Chance_Of_Getting_Top = 80
-        Cobber_Chance_Of_Getting_Buttom = 70
+        Copper_Chance_Of_Getting_Top = 80
+        Copper_Chance_Of_Getting_Buttom = 70
         
         Tin_Chance_Of_Getting_Top = 90
         Tin_Chance_Of_Getting_Buttom = 80
 
         Iron_Chance_Of_Getting_Top = 100
         Iron_Chance_Of_Getting_Buttom = 90
+
+        Niter_Chance_Of_Getting_Top = 12
+        Niter_Chance_Of_Getting_Buttom = 0
     }
     if (meters_Down >= 50 ){
         Stone_Chance_Of_Getting_Top = 25
-        Stone_Chance_Of_Getting_Buttom = 0
+        Stone_Chance_Of_Getting_Buttom = 12
 
         Coal_Chance_Of_Getting_Top = 50
         Coal_Chance_Of_Getting_Buttom = 25
 
-        Cobber_Chance_Of_Getting_Top = 65
-        Cobber_Chance_Of_Getting_Buttom = 50
+        Copper_Chance_Of_Getting_Top = 65
+        Copper_Chance_Of_Getting_Buttom = 50
 
-        Tin_Chance_Of_Getting_Top = 80
+        Tin_Chance_Of_Getting_Top = 75
         Tin_Chance_Of_Getting_Buttom = 65
 
-        Iron_Chance_Of_Getting_Top = 100
-        Iron_Chance_Of_Getting_Buttom = 80
+        Iron_Chance_Of_Getting_Top = 90
+        Iron_Chance_Of_Getting_Buttom = 75
+
+        Niter_Chance_Of_Getting_Top = 12
+        Niter_Chance_Of_Getting_Buttom = 0
+
+        Titanium_Chance_Of_Getting_Top = 100
+        Titanium_Chance_Of_Getting_Buttom = 90
     }
     if (meters_Down >= 150 ){
         Stone_Chance_Of_Getting_Top = 25
         Stone_Chance_Of_Getting_Buttom = 0
 
         Coal_Chance_Of_Getting_Top = 50
-        Coal_Chance_Of_Getting_Buttom = 25
+        Coal_Chance_Of_Getting_Buttom = 35
 
-        Cobber_Chance_Of_Getting_Top = 60
-        Cobber_Chance_Of_Getting_Buttom = 50
+        Copper_Chance_Of_Getting_Top = 60
+        Copper_Chance_Of_Getting_Buttom = 50
 
-        Tin_Chance_Of_Getting_Top = 70
+        Tin_Chance_Of_Getting_Top = 65
         Tin_Chance_Of_Getting_Buttom = 60
 
         Iron_Chance_Of_Getting_Top = 85
@@ -199,16 +228,22 @@ function check_Meters(){
         
         Gold_Chance_Of_Getting_Top = 100
         Gold_Chance_Of_Getting_Buttom = 95
+
+        Niter_Chance_Of_Getting_Top = 35
+        Niter_Chance_Of_Getting_Buttom = 25
+
+        Titanium_Chance_Of_Getting_Top = 70
+        Titanium_Chance_Of_Getting_Buttom = 65
     }
     if (meters_Down >= 300 ){
         Stone_Chance_Of_Getting_Top = 25
         Stone_Chance_Of_Getting_Buttom = 0
 
-        Coal_Chance_Of_Getting_Top = 50
+        Coal_Chance_Of_Getting_Top = 35
         Coal_Chance_Of_Getting_Buttom = 25
 
-        Cobber_Chance_Of_Getting_Top = -1
-        Cobber_Chance_Of_Getting_Buttom = -1
+        Copper_Chance_Of_Getting_Top = -1
+        Copper_Chance_Of_Getting_Buttom = -1
 
         Tin_Chance_Of_Getting_Top = -1
         Tin_Chance_Of_Getting_Buttom = -1
@@ -224,6 +259,12 @@ function check_Meters(){
 
         Diamond_Chance_Of_Getting_Top = 100
         Diamond_Chance_Of_Getting_Buttom = 95
+
+        Niter_Chance_Of_Getting_Top = -1
+        Niter_Chance_Of_Getting_Buttom = -1
+
+        Titanium_Chance_Of_Getting_Top = 50
+        Titanium_Chance_Of_Getting_Buttom = 35
     }
     pick_Mining_Object()
 }

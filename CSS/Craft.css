@@ -817,3 +817,1010 @@
     text-align: center;
 }
 
+.Craft_Electrum_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 54%;
+    top: 610px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Cover_Up_GUI_Electrum{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Electrum_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Electrum_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+.Craft_Electrum_Over_Class1{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Electrum_IMG_Gui1{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Electrum_Need_IMG1{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Electrum_Need{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+
+.Craft_Electrum_Over_Class2{
+    position: absolute;
+    top: 78%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Electrum_IMG_Gui2{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Electrum_Need_IMG2{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Electrum_Need2{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Electrum_Button{   
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 70%;
+    text-align: center;
+}
+
+
+
+
+.Craft_Illegal_Zeptiums_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 20px;
+    top: 890px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Cover_Up_GUI_Illegal_Zeptiums{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Illegal_Zeptiums_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Illegal_Zeptiums_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+.Craft_Illegal_Zeptiums_Over_Class{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Illegal_Zeptiums_IMG_Gui{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Illegal_Zeptiums_Need_IMG{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Illegal_Zeptiums_Need{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Illegal_Zeptiums_Button{   
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 70%;
+    text-align: center;
+}
+
+
+
+.Craft_Copper_Iron_Alloys_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 54%;
+    top: 890px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Cover_Up_GUI_Copper_Iron_Alloys{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Copper_Iron_Alloys_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Copper_Iron_Alloys_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+.Craft_Copper_Iron_Alloys_Over_Class1{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Copper_Iron_Alloys_IMG_Gui1{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Copper_Iron_Alloys_Need_IMG1{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Copper_Iron_Alloys_Need{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+
+.Craft_Copper_Iron_Alloys_Over_Class2{
+    position: absolute;
+    top: 78%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Copper_Iron_Alloys_IMG_Gui2{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Copper_Iron_Alloys_Need_IMG2{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Copper_Iron_Alloys_Need2{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+
+#Craft_Copper_Iron_Alloys_Button{   
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 70%;
+    text-align: center;
+}
+
+
+.Craft_Circuit_Board_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 20px;
+    top: 1170px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Cover_Up_GUI_Circuit_Board{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Circuit_Board_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Circuit_Board_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+.Craft_Circuit_Board_Over_Class1{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Circuit_Board_IMG_Gui1{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Circuit_Board_Need_IMG1{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Circuit_Board_Need1{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+
+.Craft_Circuit_Board_Over_Class2{
+    position: absolute;
+    top: 78%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Circuit_Board_IMG_Gui2{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Circuit_Board_Need_IMG2{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Circuit_Board_Need2{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Circuit_Board_Button{   
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 70%;
+    text-align: center;
+}
+
+
+.Craft_Oxidizer_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 54%;
+    top: 1170px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Cover_Up_GUI_Oxidizer{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Oxidizer_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Oxidizer_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+.Craft_Oxidizer_Over_Class1{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Oxidizer_IMG_Gui1{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Oxidizer_Need_IMG1{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Oxidizer_Need1{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+
+.Craft_Oxidizer_Over_Class2{
+    position: absolute;
+    top: 78%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Oxidizer_IMG_Gui2{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Oxidizer_Need_IMG2{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Oxidizer_Need2{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Oxidizer_Button{   
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 70%;
+    text-align: center;
+}
+
+
+.Craft_Rocket_Fuel_Gui{
+    visibility: hidden;
+
+    position: absolute;
+
+    left: 20px;
+    top: 1450px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+    
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Cover_Up_GUI_Rocket_Fuel{
+    visibility: hidden;
+
+    position:absolute;
+
+    left: -2px;
+    top: -2px;
+
+    width: 150px;
+    height: 250px;
+
+    background-color: #795644;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    z-index: 2;
+}
+
+
+#Craft_Rocket_Fuel_Name{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 120px;
+    text-align: center;
+}
+
+#Craft_Rocket_Fuel_IMG{
+    position: absolute;
+    left: -17%;
+    top: -30px;
+
+    transform: scale(0.85);
+}
+
+.Craft_Rocket_Fuel_Over_Class1{
+    position: absolute;
+    top: 67%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Rocket_Fuel_IMG_Gui1{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Rocket_Fuel_Need_IMG1{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Rocket_Fuel_Need1{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+
+.Craft_Rocket_Fuel_Over_Class2{
+    position: absolute;
+    top: 78%;
+    
+    width: 100%;
+    height: 10%;
+    background-color: #c39b77;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.Craft_Rocket_Fuel_IMG_Gui2{
+    position: relative;
+    left: 5%;
+
+    width: 20%;
+    height: 95%;
+
+    background-color:wheat;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Craft_Rocket_Fuel_Need_IMG2{
+    position: relative;
+    top: -87px;
+    left: -85px;
+
+    transform: scale(0.20);
+}
+
+#Craft_Rocket_Fuel_Need2{
+    position: relative;
+
+    top: -35px;
+    text-align: center;
+}
+
+#Craft_Rocket_Fuel_Button{   
+    position: relative;
+    left: 30%;
+
+    width: auto;
+    height: auto;
+
+    background-color: #c38452;
+    font-size: 17px;
+
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 6px;
+
+    top: 70%;
+    text-align: center;
+}
