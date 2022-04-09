@@ -2,6 +2,7 @@ var opening_Craft = true
 
 var Nails_Resorses = "Bronze"
 var Bolts_Resores = "Bronze"
+var Plate_Resrose = "Copper"
 
 var M_Change_Runing = false
 
@@ -10,6 +11,12 @@ var Bronze_Unlocked = false
 var Nails_Unlocked = false
 var Boltes_Unlocked = false
 var Iron_Plate_Unlocked = false
+var Electrum_Unlocked = false
+var Illegal_Zeptiums_Unlocked = false
+var Copper_Iron_Alloys_Unlocked = false
+var Circuit_Board_Unlocked = false
+var Oxidizer_Unlocked = false
+var Rocket_Fuel_Unlocked = false
 
 function Clean_Craft_Gui_Step1(){
     opening_Craft = true
@@ -51,6 +58,48 @@ function Craft_Check_Unloked(){
     }
     if (Iron_Plate_Unlocked == false){
         document.getElementsByClassName("Cover_Up_GUI_Iron_Plate")[0].style.visibility="visible";
+    }
+
+    if (Electrum_Unlocked == true){
+        document.getElementsByClassName("Cover_Up_GUI_Electrum")[0].style.visibility="hidden";
+    }
+    if (Electrum_Unlocked == false){
+        document.getElementsByClassName("Cover_Up_GUI_Electrum")[0].style.visibility="visible";
+    }
+
+    if (Illegal_Zeptiums_Unlocked == true){
+        document.getElementsByClassName("Cover_Up_GUI_Illegal_Zeptiums")[0].style.visibility="hidden";
+    }
+    if (Illegal_Zeptiums_Unlocked == false){
+        document.getElementsByClassName("Cover_Up_GUI_Illegal_Zeptiums")[0].style.visibility="visible";
+    }
+
+    if (Copper_Iron_Alloys_Unlocked == true){
+        document.getElementsByClassName("Cover_Up_GUI_Copper_Iron_Alloys")[0].style.visibility="hidden";
+    }
+    if (Copper_Iron_Alloys_Unlocked == false){
+        document.getElementsByClassName("Cover_Up_GUI_Copper_Iron_Alloys")[0].style.visibility="visible";
+    }
+
+    if (Circuit_Board_Unlocked == true){
+        document.getElementsByClassName("Cover_Up_GUI_Circuit_Board")[0].style.visibility="hidden";
+    }
+    if (Circuit_Board_Unlocked == false){
+        document.getElementsByClassName("Cover_Up_GUI_Circuit_Board")[0].style.visibility="visible";
+    }
+
+    if (Oxidizer_Unlocked == true){
+        document.getElementsByClassName("Cover_Up_GUI_Oxidizer")[0].style.visibility="hidden";
+    }
+    if (Oxidizer_Unlocked == false){
+        document.getElementsByClassName("Cover_Up_GUI_Oxidizer")[0].style.visibility="visible";
+    }
+
+    if (Rocket_Fuel_Unlocked == true){
+        document.getElementsByClassName("Cover_Up_GUI_Rocket_Fuel")[0].style.visibility="hidden";
+    }
+    if (Rocket_Fuel_Unlocked == false){
+        document.getElementsByClassName("Cover_Up_GUI_Rocket_Fuel")[0].style.visibility="visible";
     }
     Upgrade_Craft_Data()  
 }
@@ -179,6 +228,84 @@ function Upgrade_Craft_Data(){
         document.getElementById("Craft_Iron_Plate_Need").style.color="Red";
     }
 
+    //Electrum
+    if (Melt_Inventory[3] >= 1){
+        document.getElementById("Craft_Electrum_Need").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Electrum_Need").style.color="Red";
+    }
+    if (Melt_Inventory[4] >= 1){
+        document.getElementById("Craft_Electrum_Need2").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Electrum_Need2").style.color="Red";
+    }
+    
+    //Illegal Zeptiums
+    if (Craft_Inventory[8] >= 1){
+        document.getElementById("Craft_Illegal_Zeptiums_Need").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Illegal_Zeptiums_Need").style.color="Red";
+    }
+
+    //Copper Iron Alloys
+    if (Melt_Inventory[0] >= 1){
+        document.getElementById("Craft_Copper_Iron_Alloys_Need").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Copper_Iron_Alloys_Need").style.color="Red";
+    }
+    if (Melt_Inventory[2] >= 1){
+        document.getElementById("Craft_Copper_Iron_Alloys_Need2").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Copper_Iron_Alloys_Need2").style.color="Red";
+    }
+
+    //Circuit Board
+    if (Craft_Inventory[7] >= 1){
+        document.getElementById("Craft_Circuit_Board_Need1").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Circuit_Board_Need1").style.color="Red";
+    }
+    if (Craft_Inventory[9] >= 1){
+        document.getElementById("Craft_Circuit_Board_Need2").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Circuit_Board_Need2").style.color="Red";
+    }
+
+    //Oxidizer 
+    if (Inventory[2] >= 1){
+        document.getElementById("Craft_Oxidizer_Need1").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Oxidizer_Need1").style.color="Red";
+    }
+    if (Inventory[10] >= 1){
+        document.getElementById("Craft_Oxidizer_Need2").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Oxidizer_Need2").style.color="Red";
+    }
+
+    //Rocket Fuel 
+    if (Inventory[10] >= 2){
+        document.getElementById("Craft_Rocket_Fuel_Need1").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Rocket_Fuel_Need1").style.color="Red";
+    }
+    if (Craft_Inventory[11] >= 1){
+        document.getElementById("Craft_Rocket_Fuel_Need2").style.color="Green";
+    }
+    else{
+        document.getElementById("Craft_Rocket_Fuel_Need2").style.color="Red";
+    }
+
     if (opening_Craft == false){
         if (M_Change_Runing == false){
             Xp_Level_Check()
@@ -233,7 +360,7 @@ function Craft_Nails(){
             Upgrade_Craft_Data()
         }
         else{
-            console.log("Big fack up")
+            console.log("You need more bronze")
         }
     }
     if (Nails_Resorses == "Iron"){
@@ -246,7 +373,7 @@ function Craft_Nails(){
             Upgrade_Craft_Data()
         }
         else{
-            console.log("Big fack up")
+            console.log("You need more iron")
         }
     }
 }
@@ -262,7 +389,7 @@ function Craft_Bolts(){
             Upgrade_Craft_Data()
         }
         else{
-            console.log("Big fack up")
+            console.log("You need more bronze")
         }
     }
     if (Bolts_Resores == "Iron"){
@@ -275,33 +402,182 @@ function Craft_Bolts(){
             Upgrade_Craft_Data()
         }
         else{
-            console.log("Big fack up")
+            console.log("You need more iron")
         }
     }
 }
 
-//function Craft_Electrum{
+function Craft_Electrum(){
     if (Melt_Inventory[3] >= 1){
         if (Melt_Inventory[4] >= 1){
+            Melt_Inventory[3] -= 1
+            Melt_Inventory[4] -= 1
 
+            Craft_Inventory[8] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more gold")
         }
     }
-//}
+    else{
+        console.log("You need more silver")
+    }
+}
 
 function Craft_Iron_Plate(){
-    if (Melt_Inventory[2] >= 2){
-        Melt_Inventory[2] -= 2
-        Craft_Inventory[6] += 1
+    if (Plate_Resrose == "Copper"){
+        if (Melt_Inventory[1] >= 2){
+            Melt_Inventory[1] -= 2
+            Craft_Inventory[7] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more Copper")
+        }
+    }
+    if (Plate_Resrose == "Iron"){
+        if (Melt_Inventory[3] >= 2){
+            Melt_Inventory[3] -= 2
+            Craft_Inventory[6] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more Iron")
+        }
+    }
+}
+
+function Craft_Electrum(){
+    if (Melt_Inventory[3] >= 1){
+        if (Melt_Inventory[4] >= 1){
+            Melt_Inventory[3] -= 1
+            Melt_Inventory[4] -= 1
+
+            Craft_Inventory[8] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more Gold")
+        }
+    }
+    else{
+        console.log("You need more Silver")
+    }
+}
+
+function Craft_Illegal_Zeptiums(){
+    if (Craft_Inventory[8] >= 1){
+        Craft_Inventory[8] -= 1
+
+        coin += 100
 
         xp_Incressment = 30
         xp = xp_Incressment
         Upgrade_Craft_Data()
     }
     else{
-        console.log("Big fack up")
+        console.log("You need more Electrum")
     }
 }
 
+function Craft_Copper_Iron_Alloys(){
+    if (Melt_Inventory[1] >= 1){
+        if (Melt_Inventory[3] >= 1){
+            Melt_Inventory[1] -= 1
+            Melt_Inventory[3] -= 1
+
+            Craft_Inventory[9] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more Iron")
+        }
+    }
+    else{
+        console.log("You need more Copper")
+    }
+}
+
+function Craft_Circuit_Board(){
+    if (Craft_Inventory[7] >= 1){
+        if (Craft_Inventory[9] >= 1){
+            Craft_Inventory[7] -= 1
+            Craft_Inventory[9] -= 1
+
+            Craft_Inventory[10] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need some Copper-Iron-Alloys")
+        }
+    }
+    else{
+        console.log("You need a Copper Plate")
+    }
+}
+
+function Craft_Oxidizer(){
+    if (Inventory[2] >= 1){
+        if (Inventory[10] >= 1){
+            Inventory[2] -= 1
+            Inventory[10] -= 1
+
+            Craft_Inventory[11] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more Niter")
+        }
+    }
+    else{
+        console.log("You need more coal")
+    }
+}
+
+function Craft_Rocket_Fuel(){
+    if (Inventory[10] >= 2){
+        if (Craft_Inventory[11] >= 1){
+            Inventory[10] -= 2
+            Craft_Inventory[11] -= 1
+
+            Craft_Inventory[12] += 1
+
+            xp_Incressment = 30
+            xp = xp_Incressment
+            Upgrade_Craft_Data()
+        }
+        else{
+            console.log("You need more Oxidizer")
+        }
+    }
+    else{
+        console.log("You need more Niter")
+    }
+}
+
+//Unlock 
 function Unlock_Mud(){
     if (Level >= 2){
         if (Craft_Card >= 5){
@@ -392,6 +668,114 @@ function Unlock_Iron_Plate(){
     }
 }
 
+function Unlock_Electrum(){
+    if (Level >= 12){
+        if (Craft_Card >= 25){
+            Electrum_Unlocked = true
+
+            Craft_Card -= 25
+            document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+            Craft_Check_Unloked()
+        }
+        else{
+            console.log("Not enough Craft Cards")
+        }
+    }
+    else{
+        console.log("Not high enough level")
+    }
+}
+
+function Unlock_Illegal_Zeptiums(){
+    if (Level >= 12){
+        if (Craft_Card >= 25){
+            Illegal_Zeptiums_Unlocked = true
+
+            Craft_Card -= 25
+            document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+            Craft_Check_Unloked()
+        }
+        else{
+            console.log("Not enough Craft Cards")
+        }
+    }
+    else{
+        console.log("Not high enough level")
+    }
+}
+
+function Unlock_Copper_Iron_Alloys(){
+    if (Level >= 14){
+        if (Craft_Card >= 30){
+            Unlock_Copper_Iron_Alloys = true
+
+            Craft_Card -= 30
+            document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+            Craft_Check_Unloked()
+        }
+        else{
+            console.log("Not enough Craft Cards")
+        }
+    }
+    else{
+        console.log("Not high enough level")
+    }
+}
+
+function Unlock_Circuit_Board(){
+    if (Level >= 14){
+        if (Craft_Card >= 30){
+            Circuit_Board_Unlocked = true
+
+            Craft_Card -= 30
+            document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+            Craft_Check_Unloked()
+        }
+        else{
+            console.log("Not enough Craft Cards")
+        }
+    }
+    else{
+        console.log("Not high enough level")
+    }
+}
+
+function Unlock_Oxidizer(){
+    if (Level >= 16){
+        if (Craft_Card >= 40){
+            Oxidizer_Unlocked = true
+
+            Craft_Card -= 40
+            document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+            Craft_Check_Unloked()
+        }
+        else{
+            console.log("Not enough Craft Cards")
+        }
+    }
+    else{
+        console.log("Not high enough level")
+    }
+}
+
+function Unlock_Rocket_Fuel(){
+    if (Level >= 20){
+        if (Craft_Card >= 50){
+            Rocket_Fuel_Unlocked = true
+
+            Craft_Card -= 50
+            document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
+            Craft_Check_Unloked()
+        }
+        else{
+            console.log("Not enough Craft Cards")
+        }
+    }
+    else{
+        console.log("Not high enough level")
+    }
+}
+
 function Nail_Change_M(){
     M_Change_Runing = true
     if (Nails_Resorses == "Bronze"){
@@ -424,6 +808,24 @@ function Bolt_Change_M(){
 
         document.getElementById('Craft_Boltes_Name').innerHTML = "Bronze Boltes";
         document.getElementById('Craft_Boltes_Need').innerHTML = "1 Bronze";
+        Upgrade_Craft_Data()
+    }
+}
+
+function Plate_Change_M(){
+    M_Change_Runing = true
+    if (Plate_Resrose == "Copper"){
+        Plate_Resrose = "Iron"
+
+        document.getElementById('Craft_Iron_Plate_Name').innerHTML = "Iron Plate";
+        document.getElementById('Craft_Iron_Plate_Need').innerHTML = "1 Iron";
+        Upgrade_Craft_Data()
+    }
+    else{
+        Plate_Resrose = "Copper"
+
+        document.getElementById('Craft_Iron_Plate_Name').innerHTML = "Copper Plate";
+        document.getElementById('Craft_Iron_Plate_Need').innerHTML = "1 Copper";
         Upgrade_Craft_Data()
     }
 }
