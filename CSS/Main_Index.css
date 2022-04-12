@@ -64,15 +64,7 @@ body{
     transform: scale(0.75);
 }
 
-#Inventory_Button{
-    position:absolute;
-    left: 70%;
-    top: 25%;
 
-    background-color: transparent;
-    border: none;
-    transform: scale(1);
-}
 #upgrade_Tool_Button{
     position: absolute;
     left: 30%;

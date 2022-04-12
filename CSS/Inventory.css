@@ -33,7 +33,6 @@
 }
 
 .Inventory_Dirt{
-    visibility: hidden;
 
     position: absolute;
 
@@ -59,8 +58,6 @@
     transform: scale(0.5);
 }
 #number_Of_Dirt{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -78,8 +75,6 @@
 }
 
 .Inventory_Stone{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -104,8 +99,6 @@
     transform: scale(0.5);
 }
 #number_Of_Stone{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -123,8 +116,6 @@
 }
 
 .Inventory_Coal{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -149,8 +140,6 @@
     transform: scale(0.5);
 }
 #number_Of_Coal{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -169,8 +158,6 @@
 
 
 .Inventory_Copper_Ore{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -195,8 +182,6 @@
     transform: scale(0.5);
 }
 #number_Of_Copper_Ore{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -214,8 +199,6 @@
 }
 
 .Inventory_Tin_Ore{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -240,8 +223,6 @@
     transform: scale(0.5);
 }
 #number_Of_Tin_Ore{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -259,8 +240,6 @@
 }
 
 .Inventory_Iron_Ore{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -285,8 +264,6 @@
     transform: scale(0.5);
 }
 #number_Of_Iron_Ore{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -304,8 +281,6 @@
 }
 
 .Inventory_Silver_Ore{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -330,8 +305,6 @@
     transform: scale(0.5);
 }
 #number_Of_Silver_Ore{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -349,8 +322,6 @@
 }
 
 .Inventory_Gold_Ore{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -375,8 +346,6 @@
     transform: scale(0.4);
 }
 #number_Of_Gold_Ore{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -394,8 +363,6 @@
 }
 
 .Inventory_Diamond{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -420,8 +387,6 @@
     transform: scale(0.4);
 }
 #number_Of_Diamond{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -439,8 +404,6 @@
 }
 
 .Inventory_Titanium_Ore{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -465,8 +428,6 @@
     transform: scale(0.5);
 }
 #number_Of_Titanium_Ore{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -484,8 +445,6 @@
 }
 
 .Inventory_Niter{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -510,8 +469,6 @@
     transform: scale(0.5);
 }
 #number_Of_Niter{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -529,8 +486,6 @@
 }
 
 .Inventory_Electrum{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -555,8 +510,6 @@
     transform: scale(0.5);
 }
 #number_Of_Electrum{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -574,8 +527,6 @@
 }
 
 .Inventory_Copper{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -600,8 +551,6 @@
     transform: scale(0.5);
 }
 #number_Of_Copper{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -619,8 +568,6 @@
 }
 
 .Inventory_Tin{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -645,8 +592,6 @@
     transform: scale(0.5);
 }
 #number_Of_Tin{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -665,8 +610,6 @@
 
 
 .Inventory_Iron{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -691,8 +634,6 @@
     transform: scale(0.5);
 }
 #number_Of_Iron{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -710,8 +651,6 @@
 }
 
 .Inventory_Silver{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -736,8 +675,6 @@
     transform: scale(0.5);
 }
 #number_Of_Silver{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -755,8 +692,6 @@
 }
 
 .Inventory_Gold{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -781,8 +716,6 @@
     transform: scale(0.5);
 }
 #number_Of_Gold{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -800,8 +733,6 @@
 }
 
 .Inventory_Titanium{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -826,8 +757,6 @@
     transform: scale(0.5);
 }
 #number_Of_Titanium{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -846,8 +775,6 @@
 
 
 .Inventory_Mud{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -872,8 +799,6 @@
     transform: scale(0.5);
 }
 #number_Of_Mud{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -892,8 +817,6 @@
 
 
 .Inventory_Bronze{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -918,8 +841,6 @@
     transform: scale(0.5);
 }
 #number_Of_Bronze{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -937,8 +858,6 @@
 }
 
 .Inventory_Bronze_Nails{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -963,8 +882,6 @@
     transform: scale(0.5);
 }
 #number_Of_Bronze_Nails{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -983,8 +900,6 @@
 
 
 .Inventory_Bronze_Boltes{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -1009,8 +924,6 @@
     transform: scale(0.5);
 }
 #number_Of_Bronze_Boltes{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1028,8 +941,6 @@
 }
 
 .Inventory_Iron_Nails{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -1054,8 +965,6 @@
     transform: scale(0.5);
 }
 #number_Of_Iron_Nails{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1073,8 +982,6 @@
 }
 
 .Inventory_Iron_Boltes{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -1099,8 +1006,6 @@
     transform: scale(0.5);
 }
 #number_Of_Iron_Boltes{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1118,8 +1023,6 @@
 }
 
 .Inventory_Copper_Plate{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -1144,8 +1047,6 @@
     transform: scale(0.5);
 }
 #number_Of_Copper_Plate{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1163,8 +1064,6 @@
 }
 
 .Inventory_Iron_Plate{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -1189,8 +1088,6 @@
     transform: scale(0.5);
 }
 #number_Of_Iron_Plate{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1208,8 +1105,6 @@
 }
 
 .Inventory_Copper_Iron_Alloys{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -1234,8 +1129,6 @@
     transform: scale(0.5);
 }
 #number_Of_Copper_Iron_Alloys{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1254,8 +1147,6 @@
 
 
 .Inventory_Circuit_Board{
-    visibility: hidden;
-
     position: absolute;
 
     left: 4%;
@@ -1280,8 +1171,6 @@
     transform: scale(0.5);
 }
 #number_Of_Circuit_Board{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1299,8 +1188,6 @@
 }
 
 .Inventory_Oxidizer{
-    visibility: hidden;
-
     position: absolute;
 
     left: 125px;
@@ -1325,8 +1212,6 @@
     transform: scale(0.5);
 }
 #number_Of_Oxidizer{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;
@@ -1345,8 +1230,6 @@
 
 
 .Inventory_Rocket_Fuel{
-    visibility: hidden;
-
     position: absolute;
 
     left: 250px;
@@ -1371,8 +1254,6 @@
     transform: scale(0.5);
 }
 #number_Of_Rocket_Fuel{
-    visibility: hidden;
-
     position: relative;
 
     width: auto;

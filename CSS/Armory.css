@@ -1,0 +1,636 @@
+#Armory_Equiped_Button{
+    visibility: hidden;
+
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+}
+
+#Personal_Button{
+    position: absolute;
+    top: 50%;
+
+}
+
+
+.Armory_Equiped_Gui{
+    visibility: hidden;
+}
+
+.Hat_Armory_Gui{
+    position: absolute;
+    top: 5%;
+
+    width: 100%;
+    height: 17%;
+
+    background-color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Hat_IMG_Gui{
+    position: absolute;
+    left: 5%;
+    top: 1%;
+
+    width: 35%;
+    height: 95%;
+
+    background-color: wheat;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Hat_Stats_Gui{
+    position:absolute;
+    left: 45%;
+    top: 1%;
+
+    width: 50%;
+    height: 95%;
+
+    background-color: blue;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Hat_State_Name{
+    position: relative;
+    top: -10%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Hat_State_Level{
+    position: relative;
+    top:-19%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Hat_State_STE{
+    position: relative;
+    top:-28%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Hat_State_IMP{
+    position: relative;
+    top:-37%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+
+.ChestPlate_Armory_Gui{
+    position: absolute;
+    top: 25%;
+
+    width: 100%;
+    height: 17%;
+
+    background-color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.ChestPlate_IMG_Gui{
+    position: absolute;
+    left: 5%;
+    top: 1%;
+
+    width: 35%;
+    height: 95%;
+
+    background-color: wheat;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.ChestPLate_State_Gui{
+    position:absolute;
+    left: 45%;
+    top: 1%;
+
+    width: 50%;
+    height: 95%;
+
+    background-color: blue;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#ChestPlate_State_Name{
+    position: relative;
+    top: -10%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#ChestPlate_State_Level{
+    position: relative;
+    top:-19%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#ChestPlate_State_STE{
+    position: relative;
+    top:-28%;
+    left: 5%;
+    
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#ChestPlate_State_IMP{
+    position: relative;
+    top:-37%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+
+
+.Boots_Armory_Gui{
+    position: absolute;
+    top: 45%;
+
+    width: 100%;
+    height: 17%;
+
+    background-color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Boots_IMG_Gui{
+    position: absolute;
+    left: 5%;
+    top: 1%;
+
+    width: 35%;
+    height: 95%;
+
+    background-color: wheat;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Boots_State_Gui{
+    position:absolute;
+    left: 45%;
+    top: 1%;
+
+    width: 50%;
+    height: 95%;
+
+    background-color: blue;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Boots_State_Name{
+    position: relative;
+    top: -10%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Boots_State_Level{
+    position: relative;
+    top:-19%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Boots_State_STE{
+    position: relative;
+    top:-28%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Boots_State_IMP{
+    position: relative;
+    top:-37%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.PickAxe_Armory_Gui{
+    position: absolute;
+    top: 65%;
+
+    width: 100%;
+    height: 17%;
+
+    background-color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.PickAxe_IMG_Gui{
+    position: absolute;
+    left: 5%;
+    top: 1%;
+
+    width: 35%;
+    height: 95%;
+
+    background-color: wheat;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.PickAxe_State_Gui{
+    position:absolute;
+    left: 45%;
+    top: 1%;
+
+    width: 50%;
+    height: 95%;
+
+    background-color: blue;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#PickAxe_State_Name{
+    position: relative;
+    top: -10%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#PickAxe_State_Level{
+    position: relative;
+    top:-19%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#PickAxe_State_STE{
+    position: relative;
+    top:-28%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#PickAxe_State_IMP{
+    position: relative;
+    top:-37%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Weapon_Armory_Gui{
+    position: absolute;
+    top: 85%;
+
+    width: 100%;
+    height: 17%;
+
+    background-color: white;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Weapon_IMG_Gui{
+    position: absolute;
+    left: 5%;
+    top: 1%;
+
+    width: 35%;
+    height: 95%;
+
+    background-color: wheat;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+.Weapon_State_Gui{
+    position:absolute;
+    left: 45%;
+    top: 1%;
+
+    width: 50%;
+    height: 95%;
+
+    background-color: blue;
+
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Weapon_State_Name{
+    position: relative;
+    top: -10%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Weapon_State_Level{
+    position: relative;
+    top:-19%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Weapon_State_STE{
+    position: relative;
+    top:-28%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
+
+#Weapon_State_IMP{
+    position: relative;
+    top:-37%;
+    left: 5%;
+
+    text-align: center;
+
+    width: 90%;
+    height: 15%;
+
+    background-color: white;
+    border-radius: 8px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+}
