@@ -1,6 +1,6 @@
 var Furness_Opend = false
 
-var Melting_Ore = "Cobber"
+var Melting_Ore = "Copper"
 
 function Start_Melt_Cobber(){
     if (Inventory[3] >= 1 && Inventory[2] >= 1){
@@ -8,6 +8,7 @@ function Start_Melt_Cobber(){
         Inventory[2] -= 1
 
         Melt_Inventory[0] += 1 
+        UNL_Inventory_Melt[0] = true
 
         document.getElementById('Melt_Ore_Number').innerHTML = `${Inventory[3]}`;
         document.getElementById('Melt_Coal_Number').innerHTML = `${Inventory[2]}`;
@@ -27,6 +28,7 @@ function start_Melt_Tin(){
         Inventory[2] -= 1
 
         Melt_Inventory[1] += 1 
+        UNL_Inventory_Melt[1] = true
 
         document.getElementById('Melt_Ore_Number').innerHTML = `${Inventory[4]}`;
         document.getElementById('Melt_Coal_Number').innerHTML = `${Inventory[2]}`;
@@ -46,6 +48,7 @@ function Start_Melt_Iron(){
         Inventory[2] -= 1
 
         Melt_Inventory[2] += 1 
+        UNL_Inventory_Melt[2] = true
 
         document.getElementById('Melt_Ore_Number').innerHTML = `${Inventory[5]}`;
         document.getElementById('Melt_Coal_Number').innerHTML = `${Inventory[2]}`;
@@ -59,8 +62,69 @@ function Start_Melt_Iron(){
     }
 }
 
+
+function Start_Melt_Silver(){
+    if (Inventory[6] >= 1 && Inventory[2] >= 1){
+        Inventory[6] -= 1
+        Inventory[2] -= 1
+
+        Melt_Inventory[3] += 1 
+        UNL_Inventory_Melt[3] = true
+
+        document.getElementById('Melt_Ore_Number').innerHTML = `${Inventory[6]}`;
+        document.getElementById('Melt_Coal_Number').innerHTML = `${Inventory[2]}`;
+
+        xp_Incressment = 20
+        xp = xp_Incressment
+        Xp_Level_Check()
+    }  
+    else{
+        console.log("You need more coal")
+    }
+}
+
+function Start_Melt_Gold(){
+    if (Inventory[7] >= 1 && Inventory[2] >= 1){
+        Inventory[7] -= 1
+        Inventory[2] -= 1
+
+        Melt_Inventory[4] += 1 
+        UNL_Inventory_Melt[4] = true
+
+        document.getElementById('Melt_Ore_Number').innerHTML = `${Inventory[7]}`;
+        document.getElementById('Melt_Coal_Number').innerHTML = `${Inventory[2]}`;
+
+        xp_Incressment = 20
+        xp = xp_Incressment
+        Xp_Level_Check()
+    }  
+    else{
+        console.log("You need more coal")
+    }
+}
+
+function Start_Melt_Titanium(){
+    if (Inventory[9] >= 1 && Inventory[2] >= 1){
+        Inventory[9] -= 1
+        Inventory[2] -= 1
+
+        Melt_Inventory[5] += 1 
+        UNL_Inventory_Melt[4] = true
+
+        document.getElementById('Melt_Ore_Number').innerHTML = `${Inventory[9]}`;
+        document.getElementById('Melt_Coal_Number').innerHTML = `${Inventory[2]}`;
+
+        xp_Incressment = 20
+        xp = xp_Incressment
+        Xp_Level_Check()
+    }  
+    else{
+        console.log("You need more coal")
+    }
+}
+
 function Start_Melt(){
-    if (Melting_Ore == "Cobber"){
+    if (Melting_Ore == "Copper"){
         Start_Melt_Cobber()
     }
     if (Melting_Ore == "Tin"){
@@ -69,15 +133,25 @@ function Start_Melt(){
     if (Melting_Ore == "Iron"){
         Start_Melt_Iron()
     }
+    if (Melting_Ore == "Silver"){
+        Start_Melt_Silver()
+    }
+    if (Melting_Ore == "Gold"){
+        Start_Melt_Gold()
+    }
+    if (Melting_Ore == "Titanium"){
+        Start_Melt_Titanium()
+    }
 }
 
 
-function Melt_Selc_Cobber(){
-    Melting_Ore = "Cobber"
-    document.getElementById('Melt_Name').innerHTML = "Cobber Ore";
+function Melt_Selc_Copper(){
+    Melting_Ore = "Copper"
+    document.getElementById('Melt_Name').innerHTML = "Copper Ore";
     document.getElementById('Melt_Ore_Number').innerHTML = Inventory[3];
-    document.getElementById('Melted_Name').innerHTML = "Cobber";
-    document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Cobber_Ore.png";
+    document.getElementById('Melted_Name').innerHTML = "Copper";
+    document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Copper_Ore.png";
+    document.getElementById("Melt_Resalt_IMG").src="../Zeptrico/Mining_Images/Copper_Bar.png";
 }
 
 function Melt_Selc_Tin(){
@@ -86,6 +160,7 @@ function Melt_Selc_Tin(){
     document.getElementById('Melt_Ore_Number').innerHTML = Inventory[4];
     document.getElementById('Melted_Name').innerHTML = "Tin";
     document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Tin_Ore.png"
+    document.getElementById("Melt_Resalt_IMG").src="../Zeptrico/Mining_Images/Tin_Bar.png";
 }
 
 function Melt_Selc_Iron(){
@@ -94,7 +169,37 @@ function Melt_Selc_Iron(){
     document.getElementById('Melt_Ore_Number').innerHTML = Inventory[5];
     document.getElementById('Melted_Name').innerHTML = "Iron";
     document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Iron_Ore.png"
+    document.getElementById("Melt_Resalt_IMG").src="../Zeptrico/Mining_Images/Iron_Bar.png";
 }
+
+function Melt_Selc_Silver(){
+    Melting_Ore = "Silver"
+    document.getElementById('Melt_Name').innerHTML = "Silver ore";
+    document.getElementById('Melt_Ore_Number').innerHTML = Inventory[6];
+    document.getElementById('Melted_Name').innerHTML = "Silver";
+    document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Silver_Ore.png"
+    document.getElementById("Melt_Resalt_IMG").src="../Zeptrico/Mining_Images/Copper_Bar.png";
+}
+
+function Melt_Selc_Gold(){
+    Melting_Ore = "Gold"
+    document.getElementById('Melt_Name').innerHTML = "Gold ore";
+    document.getElementById('Melt_Ore_Number').innerHTML = Inventory[7];
+    document.getElementById('Melted_Name').innerHTML = "Gold";
+    document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Gold_Ore.png"
+    document.getElementById("Melt_Resalt_IMG").src="../Zeptrico/Mining_Images/Copper_Bar.png";
+}
+
+function Melt_Selc_Titanium(){
+    Melting_Ore = "Titanium"
+    document.getElementById('Melt_Name').innerHTML = "Titanium ore";
+    document.getElementById('Melt_Ore_Number').innerHTML = Inventory[9];
+    document.getElementById('Melted_Name').innerHTML = "Titanium";
+    document.getElementById("Melt_ore_Gui").src="../Zeptrico/Mining_Images/Gold_Ore.png"
+    document.getElementById("Melt_Resalt_IMG").src="../Zeptrico/Mining_Images/Copper_Bar.png";
+}
+
+
 
 
 function Furness_Open_Function(){

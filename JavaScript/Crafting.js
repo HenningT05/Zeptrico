@@ -308,7 +308,7 @@ function Upgrade_Craft_Data(){
 
     if (opening_Craft == false){
         if (M_Change_Runing == false){
-            Xp_Level_Check()
+            Print_BLC_Lot()
         }
         else{
             M_Change_Runing = false
@@ -324,6 +324,11 @@ function craft_Mud(){
     if (Inventory[0] >= 2){
         Inventory[0] -= 2
         Craft_Inventory[0] += 1
+        UNL_Inventory_Craft[0] = true
+
+        BLC_Lot = "Mud"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Dirt_Locked.png"
+        BLC_Lot_Number = BLC_Lot_Number + 1
 
         xp_Incressment = 30
         xp = xp_Incressment
@@ -339,6 +344,7 @@ function craft_Broze(){
         Melt_Inventory[0] -= 1
         Melt_Inventory[1] -= 1
         Craft_Inventory[1] += 1
+        UNL_Inventory_Craft[1] = true
 
         xp_Incressment = 30
         xp = xp_Incressment
@@ -354,6 +360,7 @@ function Craft_Nails(){
         if (Craft_Inventory[1] >=1){
             Craft_Inventory[1] -= 1
             Craft_Inventory[2] += 1
+            UNL_Inventory_Craft[2] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -367,6 +374,7 @@ function Craft_Nails(){
         if (Melt_Inventory[2] >= 1){
             Melt_Inventory[2] -= 1
             Craft_Inventory[3] += 1
+            UNL_Inventory_Craft[3] = true
             
             xp_Incressment = 30
             xp = xp_Incressment
@@ -383,6 +391,7 @@ function Craft_Bolts(){
         if (Craft_Inventory[1] >= 1){
             Craft_Inventory[1] -= 1
             Craft_Inventory[4] += 1
+            UNL_Inventory_Craft[4] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -396,6 +405,7 @@ function Craft_Bolts(){
         if (Melt_Inventory[2] >= 1){
             Melt_Inventory[2] -= 1
             Craft_Inventory[5] += 1
+            UNL_Inventory_Craft[5] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -407,32 +417,13 @@ function Craft_Bolts(){
     }
 }
 
-function Craft_Electrum(){
-    if (Melt_Inventory[3] >= 1){
-        if (Melt_Inventory[4] >= 1){
-            Melt_Inventory[3] -= 1
-            Melt_Inventory[4] -= 1
-
-            Craft_Inventory[8] += 1
-
-            xp_Incressment = 30
-            xp = xp_Incressment
-            Upgrade_Craft_Data()
-        }
-        else{
-            console.log("You need more gold")
-        }
-    }
-    else{
-        console.log("You need more silver")
-    }
-}
 
 function Craft_Iron_Plate(){
     if (Plate_Resrose == "Copper"){
         if (Melt_Inventory[1] >= 2){
             Melt_Inventory[1] -= 2
             Craft_Inventory[7] += 1
+            UNL_Inventory_Craft[7] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -446,6 +437,7 @@ function Craft_Iron_Plate(){
         if (Melt_Inventory[3] >= 2){
             Melt_Inventory[3] -= 2
             Craft_Inventory[6] += 1
+            UNL_Inventory_Craft[6] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -464,6 +456,7 @@ function Craft_Electrum(){
             Melt_Inventory[4] -= 1
 
             Craft_Inventory[8] += 1
+            UNL_Inventory_Craft[8] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -500,6 +493,7 @@ function Craft_Copper_Iron_Alloys(){
             Melt_Inventory[3] -= 1
 
             Craft_Inventory[9] += 1
+            UNL_Inventory_Craft[9] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -521,6 +515,7 @@ function Craft_Circuit_Board(){
             Craft_Inventory[9] -= 1
 
             Craft_Inventory[10] += 1
+            UNL_Inventory_Craft[10] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -542,6 +537,7 @@ function Craft_Oxidizer(){
             Inventory[10] -= 1
 
             Craft_Inventory[11] += 1
+            UNL_Inventory_Craft[11] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -563,6 +559,7 @@ function Craft_Rocket_Fuel(){
             Craft_Inventory[11] -= 1
 
             Craft_Inventory[12] += 1
+            UNL_Inventory_Craft[12] = true
 
             xp_Incressment = 30
             xp = xp_Incressment
@@ -707,7 +704,7 @@ function Unlock_Illegal_Zeptiums(){
 function Unlock_Copper_Iron_Alloys(){
     if (Level >= 14){
         if (Craft_Card >= 30){
-            Unlock_Copper_Iron_Alloys = true
+            Copper_Iron_Alloys_Unlocked = true
 
             Craft_Card -= 30
             document.getElementById('Craft_Card_TC').innerHTML = Craft_Card;
@@ -783,6 +780,9 @@ function Nail_Change_M(){
 
         document.getElementById('Craft_Nails_Name').innerHTML = "Iron Nails";
         document.getElementById('Craft_Nails_Need').innerHTML = "1 Iron";
+
+        document.getElementById("Craft_Nails_IMG").src="../Zeptrico/Mining_Images/Iron_Nails.png";
+        document.getElementById("Craft_Nails_Need_IMG").src="../Zeptrico/Mining_Images/Iron_Bar.png";
         Upgrade_Craft_Data()
     }
     else{
@@ -790,6 +790,9 @@ function Nail_Change_M(){
 
         document.getElementById('Craft_Nails_Name').innerHTML = "Bronze Nails";
         document.getElementById('Craft_Nails_Need').innerHTML = "1 Bronze";
+
+        document.getElementById("Craft_Nails_IMG").src="../Zeptrico/Mining_Images/Bronze_Nails.png";
+        document.getElementById("Craft_Nails_Need_IMG").src="../Zeptrico/Mining_Images/Bronze_Bar.png";
         Upgrade_Craft_Data()
     }
 }
@@ -801,6 +804,9 @@ function Bolt_Change_M(){
 
         document.getElementById('Craft_Boltes_Name').innerHTML = "Iron Boltes";
         document.getElementById('Craft_Boltes_Need').innerHTML = "1 Iron";
+
+        document.getElementById("Craft_Boltes_IMG").src="../Zeptrico/Mining_Images/Iron_Bolts.png";
+        document.getElementById("Craft_Boltes_Need_IMG").src="../Zeptrico/Mining_Images/Iron_Bar.png";
         Upgrade_Craft_Data()
     }
     else{
@@ -808,6 +814,9 @@ function Bolt_Change_M(){
 
         document.getElementById('Craft_Boltes_Name').innerHTML = "Bronze Boltes";
         document.getElementById('Craft_Boltes_Need').innerHTML = "1 Bronze";
+
+        document.getElementById("Craft_Boltes_IMG").src="../Zeptrico/Mining_Images/Bronze_Bolts.png";
+        document.getElementById("Craft_Boltes_Need_IMG").src="../Zeptrico/Mining_Images/Bronze_Bar.png";
         Upgrade_Craft_Data()
     }
 }
@@ -819,6 +828,9 @@ function Plate_Change_M(){
 
         document.getElementById('Craft_Iron_Plate_Name').innerHTML = "Iron Plate";
         document.getElementById('Craft_Iron_Plate_Need').innerHTML = "1 Iron";
+
+        document.getElementById("Craft_Iron_Plate_IMG").src="../Zeptrico/Mining_Images/Iron_Plate.png";
+        document.getElementById("Craft_Iron_Plate_Need_IMG").src="../Zeptrico/Mining_Images/Iron_Bar.png";
         Upgrade_Craft_Data()
     }
     else{
@@ -826,6 +838,9 @@ function Plate_Change_M(){
 
         document.getElementById('Craft_Iron_Plate_Name').innerHTML = "Copper Plate";
         document.getElementById('Craft_Iron_Plate_Need').innerHTML = "1 Copper";
+
+        document.getElementById("Craft_Iron_Plate_IMG").src="../Zeptrico/Mining_Images/Copper_Plate.png";
+        document.getElementById("Craft_Iron_Plate_Need_IMG").src="../Zeptrico/Mining_Images/Copper_Bar.png";
         Upgrade_Craft_Data()
     }
 }

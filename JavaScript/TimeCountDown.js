@@ -62,6 +62,7 @@ function pick_Mining_Object(){
         document.getElementById("Dirt_Inventroy_IMG").src="../Zeptrico/Mining_Images/Dirt.png";
         document.getElementById("Dirt_Inventroy_IMG").style.opacity=1; 
         Inventory[0] += 1
+        UNL_Inventory[0] = true
         document.getElementById('number_Of_Dirt').innerHTML = `Dirt ${Inventory[0]}`;
     }
     if (Stone_Chance_Of_Getting_Buttom <= random_Mining_Object && Stone_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -69,6 +70,7 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Stone.png";
         document.getElementById("Stone_Inventory_IMG").src="../Zeptrico/Mining_Images/Stone.png";
         Inventory[1] += 1
+        UNL_Inventory[1] = true
         document.getElementById('number_Of_Stone').innerHTML = `Stone ${Inventory[1]}`;
     }
     if (Coal_Chance_Of_Getting_Buttom <= random_Mining_Object && Coal_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -76,6 +78,7 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Coal.png";
         document.getElementById("Coal_Inventory_IMG").src="../Zeptrico/Mining_Images/Coal.png";
         Inventory[2] += 2
+        UNL_Inventory[2] = true
         document.getElementById('number_Of_Coal').innerHTML = `Coal ${Inventory[2]}`;
     }
     if (Copper_Chance_Of_Getting_Buttom <= random_Mining_Object && Copper_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -83,6 +86,7 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Copper_Ore.png";
         document.getElementById("Copper_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Copper_Ore.png";
         Inventory[3] += 1
+        UNL_Inventory[3] = true
         document.getElementById('number_Of_Copper_Ore').innerHTML = `Copper Ore ${Inventory[3]}`;
     }
     if (Tin_Chance_Of_Getting_Buttom <= random_Mining_Object && Tin_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -90,6 +94,7 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Tin_Ore.png";
         document.getElementById("Tin_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Tin_Ore.png";
         Inventory[4] += 1
+        UNL_Inventory[4] = true
         document.getElementById('number_Of_Tin_Ore').innerHTML = `Tin Ore: ${Inventory[4]}`;
     }
     if (Iron_Chance_Of_Getting_Buttom <= random_Mining_Object && Iron_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -97,6 +102,7 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Iron_Ore.png";
         document.getElementById("Iron_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Iron_Ore.png";
         Inventory[5] += 1
+        UNL_Inventory[5] = true
         document.getElementById('number_Of_Iron_Ore').innerHTML = `Iron Ore: ${Inventory[5]}`;
     }
     if (Silver_Chance_Of_Getting_Buttom <= random_Mining_Object && Silver_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -104,14 +110,15 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Silver_Ore.png";
         document.getElementById("Silver_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Silver_Ore.png";
         Inventory[6] += 1
+        UNL_Inventory[6] = true
         document.getElementById('number_Of_Silver_Ore').innerHTML = `Silver Ore: ${Inventory[6]}`;
     }
     if (Gold_Chance_Of_Getting_Buttom <= random_Mining_Object && Gold_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Object_Get_Text').innerHTML = "Gold Ore";
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Gold_Ore.png";
         document.getElementById("Gold_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Gold_Ore.png";
-        
         Inventory[7] += 1
+        UNL_Inventory[7] = true
         document.getElementById('number_Of_Gold_Ore').innerHTML = `Gold Ore: ${Inventory[7]}`;
     }
     if (Diamond_Chance_Of_Getting_Buttom <= random_Mining_Object && Diamond_Chance_Of_Getting_Top >= random_Mining_Object){
@@ -119,21 +126,24 @@ function pick_Mining_Object(){
         document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
         document.getElementById("Diamond_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
         Inventory[8] += 1
+        UNL_Inventory[8] = true
         document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
     }
     if (Titanium_Chance_Of_Getting_Buttom <= random_Mining_Object && Titanium_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Object_Get_Text').innerHTML = "Titanium";
-        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
-        document.getElementById("Diamond_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Titanium_Ore.png";
+        document.getElementById("Titanium_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Titanium_Ore.png";
         Inventory[9] += 1
-        document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
+        UNL_Inventory[9] = true
+        document.getElementById('number_Of_Titanium_Ore').innerHTML = `Diamond: ${Inventory[9]}`;
     }
     if (Niter_Chance_Of_Getting_Buttom <= random_Mining_Object && Niter_Chance_Of_Getting_Top >= random_Mining_Object){
         document.getElementById('Object_Get_Text').innerHTML = "Niter";
-        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
-        document.getElementById("Diamond_Ore_Inventory_IMG").src="../Zeptrico/Mining_Images/Diamond_Ore.png";
+        document.getElementById("Mine_Get_Object_IMG").src="../Zeptrico/Mining_Images/Niter.png";
+        document.getElementById("Niter_Inventory_IMG").src="../Zeptrico/Mining_Images/Niter.png";
         Inventory[10] += 1
-        document.getElementById('number_Of_Diamond').innerHTML = `Diamond: ${Inventory[8]}`;
+        UNL_Inventory[10] = true
+        document.getElementById('number_Of_Niter').innerHTML = `Niter: ${Inventory[10]}`;
     }
     Xp_Level_Check()
 }

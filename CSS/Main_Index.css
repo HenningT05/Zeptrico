@@ -50,7 +50,6 @@ body{
     border-color: #964B00;
     border-radius: 5px;
     border-style: groove;
-    border-style: groove;
     border-color: black;
     border-width: 1px;
     border-radius: 6px;
@@ -100,4 +99,84 @@ body{
     position:absolute;
     top: 60%;
     left: 90%;
+}
+
+
+.Get_Lot_BLC_Gui{
+    visibility: hidden;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+
+    width: 30%;
+    height: 23%;
+
+    background-color: #795644;
+
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 6px;
+
+    z-index: 3;
+}
+
+.Get_Lot_BLC_IMG_Gui{
+    position: absolute;
+    top: 5%;
+    left: 3.5%;
+
+    width: 90%;
+    height: 55%;
+
+    background-color: #a1785c;
+
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 6px;
+}
+
+#Get_Log_BLC_IMG{
+    position: absolute;
+    top: -55px;
+    left: -50px;
+
+    transform: scale(0.5);
+}
+
+#Get_Lot_BLC_Name{
+    position:absolute;
+    top: 90%;
+
+    width: 100%;
+    height: auto;
+
+    font-family:'Times New Roman', Times, serif;
+    background-color: #a1785c;
+    color: white;
+    text-align: center;
+
+    border-color: black;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+#Get_Log_BLC_Number{
+    position:absolute;
+    top: 120%;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #a1785c;
+    color: white;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+
+    border-color: black;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 6px;
 }
