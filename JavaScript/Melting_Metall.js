@@ -15,6 +15,10 @@ function Start_Melt_Cobber(){
 
         xp_Incressment = 20
         xp = xp_Incressment
+
+        BLC_Lot = "Copper"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Copper_Bar.png"
+
         Xp_Level_Check()
     }  
     else{
@@ -35,6 +39,10 @@ function start_Melt_Tin(){
 
         xp_Incressment = 20
         xp = xp_Incressment
+
+        BLC_Lot = "Tin"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Tin_Bar.png"
+
         Xp_Level_Check()
     }  
     else{
@@ -55,6 +63,10 @@ function Start_Melt_Iron(){
 
         xp_Incressment = 20
         xp = xp_Incressment
+
+        BLC_Lot = "Iron"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Iron_Bar.png"
+
         Xp_Level_Check()
     }  
     else{
@@ -76,6 +88,10 @@ function Start_Melt_Silver(){
 
         xp_Incressment = 20
         xp = xp_Incressment
+
+        BLC_Lot = "Silver"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Bar_Locked.png"
+
         Xp_Level_Check()
     }  
     else{
@@ -96,6 +112,10 @@ function Start_Melt_Gold(){
 
         xp_Incressment = 20
         xp = xp_Incressment
+
+        BLC_Lot = "Gold"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Bar_Locked.png"
+
         Xp_Level_Check()
     }  
     else{
@@ -116,6 +136,10 @@ function Start_Melt_Titanium(){
 
         xp_Incressment = 20
         xp = xp_Incressment
+
+        BLC_Lot = "Titanium"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Bar_Locked.png"
+
         Xp_Level_Check()
     }  
     else{

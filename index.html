@@ -429,7 +429,7 @@
                 <div class="Craft_Iron_Plate_IMG_Gui">
                     <img id="Craft_Iron_Plate_Need_IMG" src="../Zeptrico/Mining_Images/Iron_Bar.png" alt="">
                 </div>
-                <p id="Craft_Iron_Plate_Need">1 Iron</p>
+                <p id="Craft_Iron_Plate_Need">2 Iron</p>
             </div>
             <button id="Craft_Iron_Plate_Button" onclick="Craft_Iron_Plate()">Craft</button>
             <button id="Craft_Plate_Change_M_Button" onclick="Plate_Change_M()">Change</button>
@@ -683,17 +683,17 @@
                 <div class="Dirt_Market_IMG_Gui">
                     <img id="Dirt_Market_IMG" src="../Zeptrico/Mining_Images/Dirt.png" alt="">
                 </div>
-                <p id="Market_Number_OF_Dirt">0</p>
+                <p id="Market_Number_OF_Dirt">0 </p>
             </div>
             <div class="Market_Dirt_Coin_Gui">
                 <div class="Dirt_Buy_One_Class"> 
-                    <p id="Dirt_Buy_Price">4$</p>
+                    <p id="Dirt_Buy_Price">4 <img id="Market_Price_Dirt_Coin_IMG_Buy" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
                 </div>
                 <div class="Dirt_Sell_One_Class">
-                    <p id="Dirt_Sell_Price">2$</p>
+                    <p id="Dirt_Sell_Price">2 <img id="Market_Price_Dirt_Coin_IMG_Sell1" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
                 </div>
                 <div class="Dirt_Sell_All_Class">
-                    <p id="Dirt_Sell_Price_All">0$</p>
+                    <p id="Dirt_Sell_Price_All">0 <img id="Market_Price_Dirt_Coin_IMG_Sell_All" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
                 </div>
             </div>
         </div>
@@ -711,17 +711,115 @@
             </div>
             <div class="Market_Stone_Coin_Gui">
                 <div class="Stone_Buy_One_Class"> 
-                    <p id="Stone_Buy_Price">100 <img id="Market_Price_Coin_IMG" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                    <p id="Stone_Buy_Price">100 <img id="Market_Price_Coin_IMG_Buy" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
                 </div>
                 <div class="Stone_Sell_One_Class">
-                    <p id="Stone_Sell_Price">3$</p>
+                    <p id="Stone_Sell_Price">3 <img id="Market_Price_Coin_IMG_Sell1" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
                 </div>
                 <div class="Stone_Sell_All_Class">
-                    <p id="Stone_Sell_Price_All">0$</p>
+                    <p id="Stone_Sell_Price_All">... <img id="Market_Price_Coin_IMG_Sell_All" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Coal_Market_Gui">
+            <p id="Coal_Market_Name">COAL</p>
+            <button id="Coal_Market_Buy" onclick="Buy_Dirt()">Buy</button>
+            <button id="Coal_Market_Sell1" onclick="Sell_Dirt1()">Sell 1</button>
+            <button id="Coal_Market_Sell_All" onclick="Sell_Dirt_All()">Sell All</button>
+            <div class="Coal_Market_Under_Gui">
+                <div class="Coal_Market_IMG_Gui">
+                    <img id="Coal_Market_IMG" src="../Zeptrico/Mining_Images/Coal.png" alt="">
+                </div>
+                <p id="Market_Number_OF_Coal">0</p>
+            </div>
+            <div class="Market_Coal_Coin_Gui">
+                <div class="Coal_Buy_One_Class"> 
+                    <p id="Coal_Buy_Price">100 <img id="Market_Price_Coal_Coin_IMG_Buy" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Coal_Sell_One_Class">
+                    <p id="Coal_Sell_Price">3 <img id="Market_Price_Coal_Coin_IMG_Sell1" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Coal_Sell_All_Class">
+                    <p id="Coal_Sell_Price_All">... <img id="Market_Price_Coal_Coin_IMG_Sell_All" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Copper_Ore_Market_Gui">
+            <p id="Copper_Ore_Market_Name">COPPER ORE</p>
+            <button id="Copper_Ore_Market_Buy" onclick="Buy_Dirt()">Buy</button>
+            <button id="Copper_Ore_Market_Sell1" onclick="Sell_Dirt1()">Sell 1</button>
+            <button id="Copper_Ore_Market_Sell_All" onclick="Sell_Dirt_All()">Sell All</button>
+            <div class="Copper_Ore_Market_Under_Gui">
+                <div class="Copper_Ore_Market_IMG_Gui">
+                    <img id="Copper_Ore_Market_IMG" src="../Zeptrico/Mining_Images/Copper_Ore.png" alt="">
+                </div>
+                <p id="Market_Number_OF_Copper_Ore">0</p>
+            </div>
+            <div class="Market_Copper_Ore_Coin_Gui">
+                <div class="Copper_Ore_Buy_One_Class"> 
+                    <p id="Copper_Ore_Buy_Price">100 <img id="Market_Price_Copper_Ore_Coin_IMG_Buy" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Copper_Ore_Sell_One_Class">
+                    <p id="Copper_Ore_Sell_Price">3 <img id="Market_Price_Copper_Ore_Coin_IMG_Sell1" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Copper_Ore_Sell_All_Class">
+                    <p id="Copper_Ore_Sell_Price_All">... <img id="Market_Price_Copper_Ore_Coin_IMG_Sell_All" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Tin_Ore_Market_Gui">
+            <p id="Tin_Ore_Market_Name">TIN ORE</p>
+            <button id="Tin_Ore_Market_Buy" onclick="Buy_Dirt()">Buy</button>
+            <button id="Tin_Ore_Market_Sell1" onclick="Sell_Dirt1()">Sell 1</button>
+            <button id="Tin_Ore_Market_Sell_All" onclick="Sell_Dirt_All()">Sell All</button>
+            <div class="Tin_Ore_Market_Under_Gui">
+                <div class="Tin_Ore_Market_IMG_Gui">
+                    <img id="Tin_Ore_Market_IMG" src="../Zeptrico/Mining_Images/Tin_Ore.png" alt="">
+                </div>
+                <p id="Market_Number_OF_Tin_Ore">0</p>
+            </div>
+            <div class="Market_Tin_Ore_Coin_Gui">
+                <div class="Tin_Ore_Buy_One_Class"> 
+                    <p id="Tin_Ore_Buy_Price">100 <img id="Market_Price_Tin_Ore_Coin_IMG_Buy" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Tin_Ore_Sell_One_Class">
+                    <p id="Tin_Ore_Sell_Price">3 <img id="Market_Price_Tin_Ore_Coin_IMG_Sell1" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Tin_Ore_Sell_All_Class">
+                    <p id="Tin_Ore_Sell_Price_All">... <img id="Market_Price_Tin_Ore_Coin_IMG_Sell_All" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Iron_Ore_Market_Gui">
+            <p id="Iron_Ore_Market_Name">IRON ORE</p>
+            <button id="Iron_Ore_Market_Buy" onclick="Buy_Dirt()">Buy</button>
+            <button id="Iron_Ore_Market_Sell1" onclick="Sell_Dirt1()">Sell 1</button>
+            <button id="Iron_Ore_Market_Sell_All" onclick="Sell_Dirt_All()">Sell All</button>
+            <div class="Iron_Ore_Market_Under_Gui">
+                <div class="Iron_Ore_Market_IMG_Gui">
+                    <img id="Iron_Ore_Market_IMG" src="../Zeptrico/Mining_Images/Iron_Ore.png" alt="">
+                </div>
+                <p id="Market_Number_OF_Iron_Ore">0</p>
+            </div>
+            <div class="Market_Iron_Ore_Coin_Gui">
+                <div class="Iron_Ore_Buy_One_Class"> 
+                    <p id="Iron_Ore_Buy_Price">100 <img id="Market_Price_Iron_Ore_Coin_IMG_Buy" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Iron_Ore_Sell_One_Class">
+                    <p id="Iron_Ore_Sell_Price">3 <img id="Market_Price_Iron_Ore_Coin_IMG_Sell1" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
+                </div>
+                <div class="Iron_Ore_Sell_All_Class">
+                    <p id="Iron_Ore_Sell_Price_All">... <img id="Market_Price_Iron_Ore_Coin_IMG_Sell_All" src="../Zeptrico/MainScreen_IMG/Coin.png" alt=""></p>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <button id="Upgrade_Ship_Button" onclick="Open_Ship()">Ship</button>
     <button id="Close_Ship_Button" onclick="Close_Ship()">Close</button>

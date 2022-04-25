@@ -221,12 +221,23 @@ function Upgrade_Craft_Data(){
     }
 
     //Iron plate
-    if (Melt_Inventory[2] >= 2){
-        document.getElementById("Craft_Iron_Plate_Need").style.color="Green";
+    if (Plate_Resrose == "Iron"){
+        if (Melt_Inventory[2] >= 2){
+            document.getElementById("Craft_Iron_Plate_Need").style.color="Green";
+        }
+        else{
+            document.getElementById("Craft_Iron_Plate_Need").style.color="Red";
+        }
     }
     else{
-        document.getElementById("Craft_Iron_Plate_Need").style.color="Red";
+        if (Melt_Inventory[0] >= 2){
+            document.getElementById("Craft_Iron_Plate_Need").style.color="Green";
+        }
+        else{
+            document.getElementById("Craft_Iron_Plate_Need").style.color="Red";
+        }
     }
+
 
     //Electrum
     if (Melt_Inventory[3] >= 1){
@@ -348,6 +359,10 @@ function craft_Broze(){
 
         xp_Incressment = 30
         xp = xp_Incressment
+
+        BLC_Lot = "Bronze"
+        BLC_Lot_IMG = "../Zeptrico/Mining_Images/Bronze_Bar.png"
+
         Upgrade_Craft_Data()
     }
     else{
@@ -827,7 +842,7 @@ function Plate_Change_M(){
         Plate_Resrose = "Iron"
 
         document.getElementById('Craft_Iron_Plate_Name').innerHTML = "Iron Plate";
-        document.getElementById('Craft_Iron_Plate_Need').innerHTML = "1 Iron";
+        document.getElementById('Craft_Iron_Plate_Need').innerHTML = "2 Iron";
 
         document.getElementById("Craft_Iron_Plate_IMG").src="../Zeptrico/Mining_Images/Iron_Plate.png";
         document.getElementById("Craft_Iron_Plate_Need_IMG").src="../Zeptrico/Mining_Images/Iron_Bar.png";
@@ -837,7 +852,7 @@ function Plate_Change_M(){
         Plate_Resrose = "Copper"
 
         document.getElementById('Craft_Iron_Plate_Name').innerHTML = "Copper Plate";
-        document.getElementById('Craft_Iron_Plate_Need').innerHTML = "1 Copper";
+        document.getElementById('Craft_Iron_Plate_Need').innerHTML = "2 Copper";
 
         document.getElementById("Craft_Iron_Plate_IMG").src="../Zeptrico/Mining_Images/Copper_Plate.png";
         document.getElementById("Craft_Iron_Plate_Need_IMG").src="../Zeptrico/Mining_Images/Copper_Bar.png";

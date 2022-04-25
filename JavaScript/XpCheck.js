@@ -102,5 +102,7 @@ async function Xp_Level_Check(){
         document.getElementsByClassName("Xp_Progress")[0].style.width = `${xp_Prosent_Andel}%`;
         Get_LevelUp_Lot()
     }
-    Print_BLC_Lot()
+    else{
+        Print_BLC_Lot()
+    }
 }
