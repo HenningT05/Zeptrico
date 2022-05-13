@@ -7,7 +7,7 @@
     border-radius: 6px;
     background-color: red;
     color: white;
-    z-index: 1;
+    z-index: 3;
 }
 
 .Upgrade_Ship_Gui{
@@ -123,6 +123,7 @@
 }
 
 #Upgrade_Ship_Need_Text1{
+    visibility: hidden;
     position: absolute;
     top: -7%;
     left: 5%;
@@ -176,6 +177,7 @@
 }
 
 #Upgrade_Ship_Need_Text2{
+    visibility: hidden;
     position: absolute;
     top: -7%;
     left: 24%;
@@ -229,6 +231,7 @@
 }
 
 #Upgrade_Ship_Need_Text3{
+    visibility: hidden;
     position: absolute;
     top: -7%;
     left: 44%;
@@ -283,6 +286,7 @@
 }
 
 #Upgrade_Ship_Need_Text4{
+    visibility: hidden;
     position: absolute;
     top: -7%;
     left: 64%;
@@ -336,6 +340,7 @@
 }
 
 #Upgrade_Ship_Need_Text5{
+    visibility: hidden;
     position: absolute;
     top: -7%;
     left: 85%;
@@ -388,4 +393,121 @@
     text-align: center;
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#Ship_Info1_Button{
+    position: absolute;
+    top: 15%;
+    width: 53px;
+    height: 53px;
+    border-radius: 12px;
+
+    z-index: 1;
+
+    background-color: transparent;
+}
+
+#Ship_Info2_Button{
+    position: absolute;
+    top: 15%;
+    width: 53px;
+    height: 53px;
+    border-radius: 12px;
+
+    z-index: 1;
+
+    background-color: transparent;
+}
+
+#Ship_Info3_Button{
+    position: absolute;
+    top: 15%;
+    width: 53px;
+    height: 53px;
+    border-radius: 12px;
+
+    z-index: 1;
+
+    background-color: transparent;
+}
+
+
+#Ship_Info4_Button{
+    position: absolute;
+    top: 15%;
+    width: 53px;
+    height: 53px;
+    border-radius: 12px;
+
+    z-index: 1;
+
+    background-color: transparent;
+}
+
+
+#Ship_Info5_Button{
+    position: absolute;
+    top: 15%;
+    width: 53px;
+    height: 53px;
+    border-radius: 12px;
+
+    z-index: 1;
+
+    background-color: transparent;
+}
+
+
+#Ship_Info_BC_Button{
+    top: -10%;
+    left: -10%;
+    position:absolute;
+    visibility: hidden;
+    width: 110%;
+    height: 110%;
+
+    z-index: 2;
+
+    opacity: 70%;
+
+    background-color: black;
+}
+
+.Ship_Info_Box{
+    visibility: hidden;
+    position: absolute;
+    left: 16%;
+    top: 15%;
+
+    width: 65%;
+    height: 50%;
+
+    opacity: 1;
+
+    border-radius: 12px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+
+    background-color: #c38452;
+    z-index: 4;
+}
+
+.Ship_Info_IMG_Box{
+    position: absolute;
+    left: 9.5%;
+    top: 10%;
+
+    border-radius: 6px;
+    border-style: groove;
+    border-color: black;
+
+    border-width: 2px;
+
+    width: 80%;
+    height: 70%;
+
+    background-color: white;
 }
